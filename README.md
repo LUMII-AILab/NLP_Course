@@ -4,7 +4,9 @@ LU Datorikas fakultātes Bakalaura studiju programmas modulis "Valodu tehnoloģi
 
 ## Praktiskie darbi
 
-TBA
+1. Teksta izgūšana: `TextExtraction.ipynb`
+2. Teksta normalizēšana: `TextNormalization.ipynb`
+3. TBA
 
 ## Autori
 
