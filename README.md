@@ -1,12 +1,13 @@
 # Valodu tehnoloģiju pamati (DatZ1373)
 
-LU Datorikas fakultātes Bakalaura studiju programmas modulis "Valodu tehnoloģijas"
+LU Datorikas fakultātes Bakalaura studiju programmas kurss
 
 ## Praktiskie darbi
 
+### Rīkkopas valodas resursu priekšapstrādei
+
 1. Teksta izgūšana: `TextExtraction.ipynb`
 2. Teksta normalizēšana: `TextNormalization.ipynb`
-3. TBA
 
 ## Autori
 
