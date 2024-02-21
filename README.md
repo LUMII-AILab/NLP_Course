@@ -7,7 +7,7 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 ### Rīkkopas valodas resursu priekšapstrādei
 
 1. Teksta izgūšana: `TextExtraction.ipynb`
-2. Teksta normalizēšana: `TextNormalization.ipynb`
+2. Teksta priekšapstrāde: `TextPreprocessing.ipynb`
 
 ## Autori
 
