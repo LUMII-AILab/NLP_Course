@@ -6,8 +6,13 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 
 ### Rīkkopas valodas resursu priekšapstrādei
 
-1. Teksta izgūšana: `TextExtraction.ipynb`
-2. Teksta priekšapstrāde: `TextPreprocessing.ipynb`
+1. Teksta izgūšana: [TextExtraction.ipynb](notebooks/TextExtraction.ipynb)
+2. Teksta priekšapstrāde: [TextPreprocessing.ipynb](notebooks/TextPreprocessing.ipynb)
+
+### Galīgie automāti un pārveidotāji
+
+3. Morfoloģiskā analīze un sintēze: [HFST.ipynb](notebooks/HFST.ipynb)
+4. Teksta pēcapstrāde (TBA)
 
 ## Autori
 
