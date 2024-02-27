@@ -11,7 +11,7 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 
 ### Galīgie automāti un pārveidotāji
 
-3. Morfoloģiskā analīze un sintēze: [HFST.ipynb](notebooks/HFST.ipynb)
+3. Morfoloģiskā analīze un sintēze: [HFST.ipynb](notebooks/hfst.ipynb)
 4. Teksta pēcapstrāde (TBA)
 
 ## Autori
