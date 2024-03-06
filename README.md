@@ -12,7 +12,8 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 ### Galīgie automāti un pārveidotāji
 
 3. Morfoloģiskā analīze un sintēze: [HFST.ipynb](notebooks/hfst.ipynb)
-4. Teksta pēcapstrāde (TBA)
+4. Latviešu valodas morfoloģija un sintēze
+5. Teksta pēcapstrāde (TBA)
 
 ## Autori
 
@@ -20,6 +21,6 @@ prof. Inguna Skadiņa\
 asoc. prof. Normunds Grūzītis\
 asistents Viesturs Jūlijs Lasmanis
 
-## Pateicības
+## Atbalsts
 
 Kursa izstrādi finansē Eiropas Savienības Atveseļošanas un noturības mehānisma investīcija un valsts budžets projekta “Valodu tehnoloģiju iniciatīva” (2.3.1.1.i.0/1/22/I/CFLA/002) ietvaros.
