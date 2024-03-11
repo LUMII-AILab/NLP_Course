@@ -1,0 +1,54 @@
+# Copyright 2020-2022 IMCS, University of Latvia
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
+import 'byte.grm' as bytelib;
+import 'inverse.grm' as inverse;
+
+
+insspace = "" : " ";
+
+reduce_spaces = bytelib.kSpace+ : " ";
+
+delspace = bytelib.kSpace* : "";
+
+sigma_star = bytelib.kBytes*;
+
+punct_not_period = bytelib.kPunct - ".";
+
+separate_punct1 = CDRewrite["" : " ", "", punct_not_period, sigma_star];
+
+separate_punct2 = CDRewrite["" : " ", punct_not_period, "", sigma_star];
+
+separate_punct = separate_punct1 @ separate_punct2;
+
+separate_final_period = CDRewrite[
+	"" : "",
+	"",
+	"."
+	(bytelib.kPunct | bytelib.kSpace)* "[EOS]",
+	sigma_star
+];
+
+first_phase = Optimize[separate_punct @ separate_final_period];
+
+anyword = bytelib.kNotSpace+;
+inverse = inverse.INVERSE;
+
+word = (anyword <1.5>) | inverse;
+
+second_phase = delspace word (reduce_spaces word)* delspace;
+
+
+export TOKENIZER = Optimize[first_phase @ second_phase];

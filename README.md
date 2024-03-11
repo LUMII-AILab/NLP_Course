@@ -11,9 +11,9 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 
 ### Galīgie automāti un pārveidotāji
 
-3. Morfoloģiskā analīze un sintēze: [HFST.ipynb](notebooks/hfst.ipynb)
-4. Latviešu valodas morfoloģija un sintēze: [MorphologyAPI.ipynb](notebooks/MorphologyAPI.ipynb)
-5. Teksta pēcapstrāde (TBA)
+3. Morfoloģiskā analīze un sintēze: [HFST.ipynb](notebooks/HFST.ipynb)
+4. Plaša pārklājuma latviešu valodas risinājums: [TezaursAPI.ipynb](notebooks/TezaursAPI.ipynb)
+5. Teksta izvēršana un savēršana: [OpenGrm.ipynb](notebooks/OpenGrm.ipynb)
 
 ## Autori
 

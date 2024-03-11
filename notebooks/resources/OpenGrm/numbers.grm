@@ -1,0 +1,467 @@
+# Copyright 2020-2022 IMCS, University of Latvia
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
+import 'byte.grm' as bytelib;
+
+
+nommas_mark = ("" : "+NOMMAS");
+genmas_mark = ("" : "+GENMAS");
+accmas_mark = ("" : "+ACCMAS");
+datmas_mark = ("" : "+DATMAS");
+locmas_mark = ("" : "+LOCMAS");
+nomfem_mark = ("" : "+NOMFEM");
+genfem_mark = ("" : "+GENFEM");
+accfem_mark = ("" : "+ACCFEM");
+datfem_mark = ("" : "+DATFEM");
+locfem_mark = ("" : "+LOCFEM");
+
+delzero  = ("0" : "");
+delone   = ("1" : "");
+deldot   = ("." : "");
+delcol   = (":" : "");
+delslash = ("/" : " ");
+delspace = (" " : "");
+insspace = (""  : " ");
+insteens = (""  : "padsmit");
+
+ommited_ordmark = (""  : "+ORD");
+ordmark         = ("." : "+ORD");
+
+zero = ("0" : "nulle");
+
+ten      = ("" : "desmit");
+hundred  = ("" : "simt");
+thousand = ("" : "tūkstoš");
+
+cardinal_roots =
+	  ("1" : "vien")
+	| ("2" : "div")
+	| ("3" : "trīs")
+	| ("4" : "četr")
+	| ("5" : "piec")
+	| ("6" : "seš")
+	| ("7" : "septiņ")
+	| ("8" : "astoņ")
+	| ("9" : "deviņ");
+
+ordinal_roots =
+	  ("1" : "pirm")
+	| ("2" : "otr")
+	| ("3" : "treš")
+	| ("4" : "ceturt")
+	| ("5" : "piekt")
+	| ("6" : "sest")
+	| ("7" : "septīt")
+	| ("8" : "astot")
+	| ("9" : "devīt");
+
+magnitude =
+	  ("2" : "div")
+	| ("3" : "trīs")
+	| ("4" : "četr")
+	| ("5" : "piec")
+	| ("6" : "seš")
+	| ("7" : "septiņ")
+	| ("8" : "astoņ")
+	| ("9" : "deviņ");
+
+ordinal_units = ordinal_roots;
+
+teens_card = delone cardinal_roots insteens;
+teens_ord  = delone cardinal_roots insteens;
+
+tens_card =
+	magnitude ten insspace cardinal_roots |
+	(delone | magnitude) ten delzero;
+
+tens_ord =
+	magnitude ten insspace ordinal_roots |
+	(delone | magnitude) ten delzero;
+
+hundreds_card =
+	(delone | magnitude) hundred delzero delzero |
+	(delone | magnitude) hundred delzero insspace cardinal_roots |
+	(delone | magnitude) hundred insspace tens_card |
+	(delone | magnitude) hundred insspace teens_card;
+
+hundreds_ord =
+	(delone | magnitude) hundred delzero delzero |
+	(delone | magnitude) hundred delzero insspace ordinal_roots |
+	(delone | magnitude) hundred insspace tens_ord |
+	(delone | magnitude) hundred insspace teens_ord;
+
+thousands_card =
+	(delone | magnitude) thousand delzero delzero delzero |
+	(delone | magnitude) thousand delzero delzero insspace cardinal_roots |
+	(delone | magnitude) thousand delzero insspace tens_card |
+	(delone | magnitude) thousand delzero insspace teens_card |
+	(delone | magnitude) thousand insspace hundreds_card;
+
+thousands_ord =
+	(delone | magnitude) thousand delzero delzero delzero |
+	(delone | magnitude) thousand delzero delzero insspace ordinal_roots |
+	(delone | magnitude) thousand delzero insspace tens_ord |
+	(delone | magnitude) thousand delzero insspace teens_ord |
+	(delone | magnitude) thousand insspace hundreds_ord ;
+
+cardinals = Optimize[
+	cardinal_roots | tens_card | teens_card | hundreds_card | thousands_card
+];
+
+ordinals_without_dot = Optimize[
+	ordinal_units  | tens_ord  | teens_ord  | hundreds_ord  | thousands_ord
+];
+
+ordinals = ordinals_without_dot ordmark;
+
+numerals = Optimize[cardinals | ordinals];
+
+below_1000_card = Optimize[
+	delzero delzero insspace cardinal_roots nommas_mark |
+	delzero insspace tens_card nommas_mark |
+	delzero insspace teens_card nommas_mark |
+	insspace hundreds_card nommas_mark
+];
+
+initial_below_1000_card = Optimize [cardinal_roots | tens_card | teens_card | hundreds_card];
+
+three_zeros = ("000" : "");
+
+three_digits = ("" : "tūkstoši+NOMMAS");
+six_digits = ("" : "miljoni+NOMMAS");
+
+numbers_w_1_space = initial_below_1000_card nommas_mark " " three_digits (below_1000_card | three_zeros);
+numbers_w_2_spaces = initial_below_1000_card nommas_mark " " six_digits (insspace below_1000_card " " three_digits | three_zeros " ") (below_1000_card | three_zeros);
+
+huge_numbers = Optimize[numbers_w_1_space | numbers_w_2_spaces];
+
+card_roots_sg = ("1" : "vien");
+
+card_roots_pl =
+	  ("2" : "div")
+	| ("3" : "trīs")
+	| ("4" : "četr")
+	| ("5" : "piec")
+	| ("6" : "seš")
+	| ("7" : "septiņ")
+	| ("8" : "astoņ")
+	| ("9" : "deviņ");
+
+tens_card_sg = (delone | magnitude) ten insspace card_roots_sg;
+
+tens_card_pl =
+	magnitude ten insspace card_roots_pl |
+	(delone | magnitude) ten delzero;
+
+hundreds_card_sg =
+	(delone | magnitude) hundred delzero insspace card_roots_sg |
+	(delone | magnitude) hundred insspace tens_card_sg;
+
+hundreds_card_pl =
+	(delone | magnitude) hundred delzero delzero |
+	(delone | magnitude) hundred delzero insspace card_roots_pl |
+	(delone | magnitude) hundred insspace tens_card_pl |
+	(delone | magnitude) hundred insspace teens_card;
+
+thousands_card_sg =
+	(delone | magnitude) thousand delzero delzero insspace card_roots_sg |
+	(delone | magnitude) thousand delzero insspace tens_card_sg |
+	(delone | magnitude) thousand insspace hundreds_card_sg;
+
+thousands_card_pl =
+	(delone | magnitude) thousand delzero delzero delzero |
+	(delone | magnitude) thousand delzero delzero insspace card_roots_pl |
+	(delone | magnitude) thousand delzero insspace tens_card_pl |
+	(delone | magnitude) thousand delzero insspace teens_card |
+	(delone | magnitude) thousand insspace hundreds_card_pl;
+
+cardinals_sg = Optimize[
+	card_roots_sg | tens_card_sg | hundreds_card_sg | thousands_card_sg
+];
+
+cardinals_pl = Optimize[
+	card_roots_pl | tens_card_pl | teens_card | hundreds_card_pl | thousands_card_pl
+];
+
+base_numerals = numerals nommas_mark;
+
+digit = cardinal_roots nommas_mark | zero;
+
+base_digit = cardinal_roots | zero;
+
+above_9999 = digit insspace digit insspace digit (insspace digit)+ insspace base_digit;
+
+card_above_9999 = digit insspace digit insspace digit (insspace digit)+ insspace digit;
+
+decimal_sep = (","|"." : "komats");
+
+decimals =
+	(zero | cardinals nommas_mark) insspace decimal_sep insspace cardinals |
+	(zero | cardinals nommas_mark) insspace decimal_sep insspace ((zero insspace)* cardinals | (zero insspace)* zero) |
+	(zero | cardinals nommas_mark) insspace decimal_sep insspace above_9999;
+
+base_decimals = decimals nommas_mark;
+
+decimals_sg = Optimize [
+	(zero | cardinals nommas_mark) insspace decimal_sep insspace cardinals_sg |
+	(zero | cardinals nommas_mark) insspace decimal_sep insspace ((zero insspace)* cardinals_sg)
+];
+
+decimals_pl = Optimize [
+	(zero | cardinals nommas_mark) insspace decimal_sep insspace cardinals_pl |
+	(zero | cardinals nommas_mark) insspace decimal_sep insspace ((zero insspace)* cardinals_pl | (zero insspace)* zero)
+];
+
+roman_numerals =
+      ("I"    : "pirmais")
+	| ("II"   : "otrais")
+	| ("III"  : "trešais")
+	| ("IV"   : "ceturtais")
+	| ("V"    : "piektais")
+	| ("VI"   : "sestais")
+	| ("VII"  : "septītais")
+	| ("VIII" : "astotais")
+	| ("IX"   : "devītais")
+	| ("X"    : "desmitais")
+	| ("XI"   : "vienpadsmitais")
+	| ("XII"  : "divpadsmitais");
+
+february = (("02" | "2") : "februāris");
+
+short_months =
+	  (("04" | "4") : "aprīlis")
+	| (("06" | "6") : "jūnijs")
+	| (("09" | "9") : "septembris")
+	| ( "11"        : "novembris");
+
+long_months =
+	  (("01" | "1") : "janvāris")
+	| (("03" | "3") : "marts")
+	| (("05" | "5") : "maijs")
+	| (("07" | "7") : "jūlijs")
+	| (("08" | "8") : "augusts")
+	|  ("10"        : "oktobris")
+	|  ("12"        : "decembris");
+
+months = Optimize[february | short_months | long_months];
+
+year = ("" : "gads");
+
+days_in_month =
+	  (("01" | "1") : "pirm")
+	| (("02" | "2") : "otr")
+	| (("03" | "3") : "treš")
+	| (("04" | "4") : "ceturt")
+	| (("05" | "5") : "piekt")
+	| (("06" | "6") : "sest")
+	| (("07" | "7") : "septīt")
+	| (("08" | "8") : "astot")
+	| (("09" | "9") : "devīt")
+	| ( "10"        : "desmit")
+	| ( "11"        : "vienpadsmit")
+	| ( "12"        : "divpadsmit")
+	| ( "13"        : "trīspadsmit")
+	| ( "14"        : "četrpadsmit")
+	| ( "15"        : "piecpadsmit")
+	| ( "16"        : "sešpadsmit")
+	| ( "17"        : "septiņpadsmit")
+	| ( "18"        : "astoņpadsmit")
+	| ( "19"        : "deviņpadsmit")
+	| ( "20"        : "divdesmit")
+	| ( "21"        : "divdesmit pirm")
+	| ( "22"        : "divdesmit otr")
+	| ( "23"        : "divdesmit treš")
+	| ( "24"        : "divdesmit ceturt")
+	| ( "25"        : "divdesmit piekt")
+	| ( "26"        : "divdesmit sest")
+	| ( "27"        : "divdesmit septīt")
+	| ( "28"        : "divdesmit astot");
+
+extra_days =
+	("29" : "divdesmit devīt") |
+	("30" : "trīsdesmit");
+
+extra_extra_day = ("31" : "trīsdesmit pirm");
+
+to_31 = Optimize[days_in_month | extra_days | extra_extra_day];
+
+ord_to_31 = to_31 ordmark;
+
+valid_date =
+	days_in_month ordmark nommas_mark insspace february insspace deldot |
+	(days_in_month | extra_days) ordmark nommas_mark insspace short_months insspace deldot |
+	(days_in_month | extra_days | extra_extra_day) ordmark nommas_mark insspace long_months insspace deldot;
+
+date =
+	valid_date ordinals nommas_mark insspace year |
+	valid_date ordinals_without_dot ommited_ordmark nommas_mark insspace year;
+
+gads = ((" g." | " gads") : " gads");
+
+gads_loc = (" gadā" : " gadā");
+
+months_nom =
+	" janvāris" | " februāris" | " marts" | " aprīlis" | " maijs" | " jūnijs" |
+	" jūlijs" | " augusts" | " septembris" | " oktobris" | " novembris" | " decembris";
+
+months_loc =
+	" janvārī" | " februārī" | " martā" | " aprīlī" | " maijā" | " jūnijā" |
+	" jūlijā" | " augustā" | " septembrī" | " oktobrī" | " novembrī" | " decembrī";
+
+years =
+	ordinals nommas_mark gads nommas_mark |
+	ordinals genmas_mark gads genmas_mark (bytelib.kSpace ord_to_31 nommas_mark)? months_nom |
+	ordinals genmas_mark gads genmas_mark (bytelib.kSpace ord_to_31 locmas_mark)? months_loc |
+	ordinals locmas_mark gads_loc;
+
+percent = ((" %" | "%") : "procenti");
+
+par = ("par " : "par ");
+
+percentage =
+	(cardinals | decimals) nommas_mark insspace percent nommas_mark |
+	par (cardinals_sg | decimals_sg) accmas_mark insspace percent accmas_mark |
+	par (cardinals_pl | decimals_pl) datmas_mark insspace percent datmas_mark;
+
+by = (" x " : "reiz");
+
+dimensions = (decimals | cardinals) nommas_mark (insspace by insspace (decimals | cardinals) nommas_mark)+;
+
+times = (" x" | "x" : "reize");
+
+minute_marker = ("'" | "’" | " '" | " ’" | " min" | " / '" | " / ’" | " / min" : "minūtē");
+
+n_times =
+	cardinals accfem_mark insspace times accfem_mark (insspace minute_marker)? |
+	par (cardinals_sg | decimals_sg) accfem_mark insspace times accfem_mark (insspace minute_marker)? |
+	par (cardinals_pl | decimals_pl) datfem_mark insspace times datfem_mark (insspace minute_marker)?;
+
+per = (" / " : "uz");
+
+x_per_y = (decimals | cardinals) nommas_mark insspace per insspace (decimals | cardinals) nommas_mark;
+
+to = (" - " : "līdz");
+
+x_to_y = (decimals | cardinals) nommas_mark insspace to insspace (decimals | cardinals) nommas_mark;
+
+clock = ("plkst. " : "pulksten");
+
+and = ("" : "un");
+
+minutes = ("" : "minūtes");
+
+card_10_99 = Optimize[teens_card | tens_card];
+
+hours =
+	clock insspace delzero zero |
+	clock insspace delzero? cardinal_roots locmas_mark |
+	clock insspace card_10_99 locmas_mark;
+
+loc_time =
+	hours delcol insspace zero insspace zero |
+	hours delcol insspace and insspace delzero cardinal_roots locfem_mark insspace minutes locfem_mark |
+	hours delcol insspace and insspace card_10_99 locfem_mark insspace minutes locfem_mark;
+
+dat_markers = "ap " | "uz " | "no " | "līdz " | "pēc ";
+
+dat_hours =
+	clock insspace delzero zero |
+	clock insspace delzero? cardinal_roots datmas_mark |
+	clock insspace card_10_99 datmas_mark;
+
+dat_time =
+	dat_markers dat_hours delcol insspace zero insspace zero |
+	dat_markers dat_hours delcol insspace and insspace delzero cardinal_roots datfem_mark insspace minutes datfem_mark |
+	dat_markers dat_hours delcol insspace and insspace card_10_99 datfem_mark insspace minutes datfem_mark;
+
+time = Optimize[dat_time | loc_time];
+
+space = " ";
+
+measurements_mas =
+	  ("m"              : "metri")
+	| ("cm"             : "centimetri")
+	| (("cm2"|"cm²")    : "kvadrātcentimetri")
+	| (("cm3"|"cm³")    : "kubikcentimetri")
+	| ("mm"             : "milimetri")
+	| (("mm2"|"mm²")    : "kvadrātmilimetri")
+	| (("mm3"|"mm³")    : "kubikmilimetri")
+	| ("mkm"            : "mikrometri")
+	| ("l"              : "litri")
+	| ("ml"             : "mililitri")
+	| (("µl"|"mkl")     : "mikrolitri")
+	| ("kg"             : "kilogrami")
+	| ("g"              : "grami")
+	| ("mg"             : "miligrami")
+	| (("µg"|"mkg")     : "mikrogrami")
+	| ("ng"             : "nanogrami")
+	| ("mol"            : "moli")
+	| ("mmol"           : "milimoli")
+	| (("µmol"|"mkmol") : "mikromoli")
+	| ("milj."          : "miljoni");
+
+measurements_fem =
+	  ("h"              : "stundas")
+	| ("min"            : "minūtes")
+	| (("sek"|"s")      : "sekundes")
+	| ("sv"             : "svārstības")
+	| (("Tb."|"tb."|"Tab."|"tab."|"Tbl."|"tbl."|"Tabl."|"tabl.") : "tabletes");
+
+measurements_loc =
+	  (("Ø"|"diam.")    : "diametrā")
+	| ("l"              : "litrā")
+	| ("ml"             : "mililitrā")
+	| (("µl"|"mkl")     : "mikrolitrā")
+	| ("h"              : "stundā")
+	| ("min"            : "minūtē")
+	| (("sek"|"s")      : "sekundē")
+	| ("r."             : "rītā")
+	| ("p."             : "pusdienlaikā")
+	| ("d."             : "dienā")
+	| (("vak."|"v.")    : "vakarā")
+	| ("n."             : "naktī");
+
+measure =
+	(cardinals_sg | decimals_sg) nomfem_mark space measurements_fem nomfem_mark ((delspace)? delslash (delspace)? measurements_loc)? |
+	(cardinals_pl | decimals_pl) nomfem_mark space measurements_fem nomfem_mark ((delspace)? delslash (delspace)? measurements_loc)? |
+	(cardinals_sg | decimals_sg) nommas_mark space measurements_mas nommas_mark ((delspace)? delslash (delspace)? measurements_loc)? |
+	(cardinals_pl | decimals_pl) nommas_mark space measurements_mas nommas_mark ((delspace)? delslash (delspace)? measurements_loc)?;
+
+par_measure =
+	par (cardinals_sg | decimals_sg) accfem_mark space measurements_fem accfem_mark ((delspace)? delslash (delspace)? measurements_loc)? |
+	par (cardinals_pl | decimals_pl) datfem_mark space measurements_fem datfem_mark ((delspace)? delslash (delspace)? measurements_loc)? |
+	par (cardinals_sg | decimals_sg) accmas_mark space measurements_mas accmas_mark ((delspace)? delslash (delspace)? measurements_loc)? |
+	par (cardinals_pl | decimals_pl) datmas_mark space measurements_mas datmas_mark ((delspace)? delslash (delspace)? measurements_loc)?;
+
+measurements = Optimize[measure | par_measure];
+
+
+export NUMBERS = Optimize[
+	  zero
+	| base_numerals
+	| base_decimals
+	| card_above_9999
+	| huge_numbers
+	| roman_numerals
+	| date
+	| years
+	| percentage
+	| dimensions
+	| n_times
+	| x_per_y
+	| x_to_y
+	| time
+	| measurements
+];
