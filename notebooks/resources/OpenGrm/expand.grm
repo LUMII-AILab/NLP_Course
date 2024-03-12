@@ -15,6 +15,7 @@
 
 import 'byte.grm' as bytelib;
 import 'numbers.grm' as numbers;
+import 'declensions.grm' as decl;
 
 
 trim_spaces = (bytelib.kSpace* : "");
@@ -29,5 +30,11 @@ token = (word <1.5>) | number;
 
 tokenize_sentence = trim_spaces token (reduce_spaces token)* trim_spaces;
 
+decl = decl.DECLENSIONS;
 
-export TOKENIZER = Optimize[tokenize_sentence];
+declension = (word <1.5>) | decl;
+
+process_declenstions = trim_spaces declension (reduce_spaces declension)* trim_spaces;
+
+
+export TOKENIZER = Optimize[tokenize_sentence | process_declenstions];

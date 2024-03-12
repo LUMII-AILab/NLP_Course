@@ -12,13 +12,17 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 ### Galīgie automāti un pārveidotāji
 
 3. Morfoloģiskā analīze un sintēze: [HFST.ipynb](notebooks/HFST.ipynb)
-4. Plaša pārklājuma latviešu valodas risinājums: [TezaursAPI.ipynb](notebooks/TezaursAPI.ipynb)
-5. Teksta izvēršana un savēršana: [OpenGrm.ipynb](notebooks/OpenGrm.ipynb)
+4. Teksta izvēršana un savēršana: [OpenGrm.ipynb](notebooks/OpenGrm.ipynb)
+
+### Gramatiskā analīze
+
+5. Latviešu valodas morfoloģiskais analizators un sintezators: [TezaursAPI.ipynb](notebooks/TezaursAPI.ipynb)
+6. Rīkkopas universālo atkarību parsēšanai: TBA
 
 ### Statistiskie valodas modeļi
 
-6. N-grammu modeļi: TBA
-7. Teksta klasificēšana: [TextClassification.ipynb](notebooks/TextClassification.ipynb)
+7. N-grammu modeļi: TBA
+8. Teksta klasificēšana: [TextClassification.ipynb](notebooks/TextClassification.ipynb)
 
 ## Autori
 

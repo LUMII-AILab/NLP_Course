@@ -1,0 +1,240 @@
+# Copyright 2020-2022 IMCS, University of Latvia
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
+import 'byte.grm' as bytelib;
+
+
+zero_nommas = ("nulle+NOMMAS" : "nulle");
+zero_genmas = ("nulle+GENMAS" : "nulle");
+zero_accmas = ("nulle+ACCMAS" : "nulle");
+zero_datmas = ("nulle+DATMAS" : "nulle");
+zero_locmas = ("nulle+LOCMAS" : "nulle");
+zero_nomfem = ("nulle+NOMFEM" : "nulle");
+zero_genfem = ("nulle+GENFEM" : "nulle");
+zero_accfem = ("nulle+ACCFEM" : "nulle");
+zero_datfem = ("nulle+DATFEM" : "nulle");
+zero_locfem = ("nulle+LOCFEM" : "nulle");
+
+zero = Optimize[
+	zero_nommas | zero_genmas | zero_accmas | zero_datmas | zero_locmas |
+	zero_nomfem | zero_genfem | zero_accfem | zero_datfem | zero_locfem
+];
+
+roots1 = "vien";
+
+decl1nommas = ("+NOMMAS" : "s");
+decl1genmas = ("+GENMAS" : "a");
+decl1accmas = ("+ACCMAS" : "u");
+decl1datmas = ("+DATMAS" : "am");
+decl1locmas = ("+LOCMAS" : "ā");
+decl1nomfem = ("+NOMFEM" : "a");
+decl1genfem = ("+GENFEM" : "as");
+decl1accfem = ("+ACCFEM" : "u");
+decl1datfem = ("+DATFEM" : "ai");
+decl1locfem = ("+LOCFEM" : "ā");
+
+roots2 = "div" | "četr" | "piec" | "seš" | "septiņ" | "astoņ" | "deviņ";
+
+decl2nommas = ("+NOMMAS" : "i");
+decl2genmas = ("+GENMAS" : "u");
+decl2accmas = ("+ACCMAS" : "us");
+decl2datmas = ("+DATMAS" : "iem");
+decl2locmas = ("+LOCMAS" : "os");
+decl2nomfem = ("+NOMFEM" : "as");
+decl2genfem = ("+GENFEM" : "u");
+decl2accfem = ("+ACCFEM" : "as");
+decl2datfem = ("+DATFEM" : "ām");
+decl2locfem = ("+LOCFEM" : "ās");
+
+roots3 = "trīs";
+
+decl3nommas = ("trīs+NOMMAS" : "trīs");
+decl3genmas = ("trīs+GENMAS" : "triju");
+decl3accmas = ("trīs+ACCMAS" : "trīs");
+decl3datmas = ("trīs+DATMAS" : "trim");
+decl3locmas = ("trīs+LOCMAS" : "trijos");
+decl3nomfem = ("trīs+NOMFEM" : "trīs");
+decl3genfem = ("trīs+GENFEM" : "triju");
+decl3accfem = ("trīs+ACCFEM" : "trīs");
+decl3datfem = ("trīs+DATFEM" : "trim");
+decl3locfem = ("trīs+LOCFEM" : "trijās");
+
+roots4 = (bytelib.kNotSpace)* "padsmit" | (bytelib.kNotSpace)* "desmit" | (bytelib.kNotSpace)* "simt" | (bytelib.kNotSpace)* "tūkstoš";
+
+decl4nommas = ("+NOMMAS" : "");
+decl4genmas = ("+GENMAS" : "");
+decl4accmas = ("+ACCMAS" : "");
+decl4datmas = ("+DATMAS" : "iem");
+decl4locmas = ("+LOCMAS" : "os");
+decl4nomfem = ("+NOMFEM" : "");
+decl4genfem = ("+GENFEM" : "");
+decl4accfem = ("+ACCFEM" : "");
+decl4datfem = ("+DATFEM" : "");
+decl4locfem = ("+LOCFEM" : "");
+
+roots5 = "pirm" | "otr" | "treš" | "ceturt" | "piekt" | "sest" | "septīt" | "astot" | "devīt" | (bytelib.kNotSpace)* "padsmit" | (bytelib.kNotSpace)* "desmit" | (bytelib.kNotSpace)* "simt" | (bytelib.kNotSpace)* "tūkstoš";
+
+decl5nommas = ("+ORD+NOMMAS"|"+NOMMAS+ORD" : "ais");
+decl5genmas = ("+ORD+GENMAS"|"+GENMAS+ORD" : "ā");
+decl5accmas = ("+ORD+ACCMAS"|"+ACCMAS+ORD" : "o");
+decl5datmas = ("+ORD+DATMAS"|"+DATMAS+ORD" : "ajam");
+decl5locmas = ("+ORD+LOCMAS"|"+LOCMAS+ORD" : "ajā");
+decl5nomfem = ("+ORD+NOMFEM"|"+NOMFEM+ORD" : "ā");
+decl5genfem = ("+ORD+GENFEM"|"+GENFEM+ORD" : "ās");
+decl5accfem = ("+ORD+ACCFEM"|"+ACCFEM+ORD" : "o");
+decl5datfem = ("+ORD+DATFEM"|"+DATFEM+ORD" : "ajai");
+decl5locfem = ("+ORD+LOCFEM"|"+LOCFEM+ORD" : "ajā");
+
+roots6 = "pirm" | "otr" | "treš" | "ceturt" | "piekt" | "sest" | "septīt" | "astot" | "devīt" | (bytelib.kNotSpace)* "padsmit" | (bytelib.kNotSpace)* "desmit" | (bytelib.kNotSpace)* "simt" | (bytelib.kNotSpace)* "tūkstoš";
+
+decl6nommas = ("" : "ie");
+decl6genmas = ("" : "o");
+decl6accmas = ("" : "os");
+decl6datmas = ("" : "ajiem");
+decl6locmas = ("" : "ajos");
+decl6nomfem = ("" : "ās");
+decl6genfem = ("" : "o");
+decl6accfem = ("" : "ās");
+decl6datfem = ("" : "ajām");
+decl6locfem = ("" : "ajās");
+
+nommas_sg = roots1 decl1nommas;
+genmas_sg = roots1 decl1genmas;
+accmas_sg = roots1 decl1accmas;
+datmas_sg = roots1 decl1datmas;
+locmas_sg = roots1 decl1locmas;
+nomfem_sg = roots1 decl1nomfem;
+genfem_sg = roots1 decl1genfem;
+accfem_sg = roots1 decl1accfem;
+datfem_sg = roots1 decl1datfem;
+locfem_sg = roots1 decl1locfem;
+
+nommas_pl = zero_nommas | roots2 decl2nommas | decl3nommas | roots4 decl4nommas;
+genmas_pl = zero_genmas | roots2 decl2genmas | decl3genmas | roots4 decl4genmas;
+accmas_pl = zero_accmas | roots2 decl2accmas | decl3accmas | roots4 decl4accmas;
+datmas_pl = zero_datmas | roots2 decl2datmas | decl3datmas | roots4 decl4datmas;
+locmas_pl = zero_locmas | roots2 decl2locmas | decl3locmas | roots4 decl4locmas;
+nomfem_pl = zero_nomfem | roots2 decl2nomfem | decl3nomfem | roots4 decl4nomfem;
+genfem_pl = zero_genfem | roots2 decl2genfem | decl3genfem | roots4 decl4genfem;
+accfem_pl = zero_accfem | roots2 decl2accfem | decl3accfem | roots4 decl4accfem;
+datfem_pl = zero_datfem | roots2 decl2datfem | decl3datfem | roots4 decl4datfem;
+locfem_pl = zero_locfem | roots2 decl2locfem | decl3locfem | roots4 decl4locfem;
+
+nommas_ord = roots5 decl5nommas;
+genmas_ord = roots5 decl5genmas;
+accmas_ord = roots5 decl5accmas;
+datmas_ord = roots5 decl5datmas;
+locmas_ord = roots5 decl5locmas;
+nomfem_ord = roots5 decl5nomfem;
+genfem_ord = roots5 decl5genfem;
+accfem_ord = roots5 decl5accfem;
+datfem_ord = roots5 decl5datfem;
+locfem_ord = roots5 decl5locfem;
+
+nommas = nommas_sg | nommas_pl | nommas_ord;
+genmas = genmas_sg | genmas_pl | genmas_ord;
+accmas = accmas_sg | accmas_pl | accmas_ord;
+datmas = datmas_sg | datmas_pl | datmas_ord;
+locmas = locmas_sg | locmas_pl | locmas_ord;
+nomfem = nomfem_sg | nomfem_pl | nomfem_ord;
+genfem = genfem_sg | genfem_pl | genfem_ord;
+accfem = accfem_sg | accfem_pl | accfem_ord;
+datfem = datfem_sg | datfem_pl | datfem_ord;
+locfem = locfem_sg | locfem_pl | locfem_ord;
+
+base_sg = Optimize[nommas_sg | genmas_sg | accmas_sg | datmas_sg | locmas_sg | nomfem_sg | genfem_sg | accfem_sg | datfem_sg | locfem_sg];
+base_pl = Optimize[nommas_pl | genmas_pl | accmas_pl | datmas_pl | locmas_pl | nomfem_pl | genfem_pl | accfem_pl | datfem_pl | locfem_pl];
+
+base = Optimize[nommas | genmas | accmas | datmas | locmas | nomfem | genfem | accfem | datfem | locfem];
+
+year_nommas = ("gads+NOMMAS" : "gads");
+year_genmas = ("gads+GENMAS" : "gada");
+year_accmas = ("gads+ACCMAS" : "gadu");
+year_datmas = ("gads+DATMAS" : "gadam");
+year_locmas = ("gads+LOCMAS" : "gadā");
+
+year = Optimize[year_nommas | year_genmas | year_accmas | year_datmas | year_locmas];
+
+times_accfem_sg = ("reize+ACCFEM" : "reizi");
+times_sg = Optimize[times_accfem_sg];
+
+times_accfem_pl = ("reize+ACCFEM" : "reizes");
+times_datfem_pl = ("reize+DATFEM" : "reizēm");
+times_pl = Optimize[times_accfem_pl | times_datfem_pl];
+
+reize_sg = base_sg bytelib.kSpace times_sg;
+reize_pl = base_pl bytelib.kSpace times_pl;
+
+times = Optimize[reize_sg | reize_pl];
+
+mas1_measures = ((bytelib.kNotSpace)* ("metr" | "litr" | "gram" | "mol")) | "procent";
+
+meas1_nommas_sg = ("i+NOMMAS" : "s");
+meas1_accmas_sg = ("i+ACCMAS" : "u");
+meas1_sg = Optimize[meas1_nommas_sg | meas1_accmas_sg];
+
+meas1_nommas_pl = ("i+NOMMAS" : "i");
+meas1_datmas_pl = ("i+DATMAS" : "iem");
+meas1_pl = Optimize[meas1_nommas_pl | meas1_datmas_pl];
+
+meas1_mas_sg = base_sg bytelib.kSpace mas1_measures meas1_sg;
+meas1_mas_pl = base_pl bytelib.kSpace mas1_measures meas1_pl;
+
+mas2_measures = "tūksto";
+
+meas2_nommas_sg = ("ši+NOMMAS" : "tis");
+meas2_accmas_sg = ("ši+ACCMAS" : "ti");
+meas2_sg = Optimize[meas2_nommas_sg | meas2_accmas_sg];
+
+meas2_nommas_pl = ("ši+NOMMAS" : "ši");
+meas2_datmas_pl = ("ši+DATMAS" : "šiem");
+meas2_pl = Optimize[meas2_nommas_pl | meas2_datmas_pl];
+
+meas2_mas_sg = base_sg bytelib.kSpace mas2_measures meas2_sg;
+meas2_mas_pl = base_pl bytelib.kSpace mas2_measures meas2_pl;
+
+fem4_measures = "stund";
+
+meas4_nomfem_sg = ("as+NOMFEM" : "a");
+meas4_accfem_sg = ("as+ACCFEM" : "u");
+meas4_sg = Optimize[meas4_nomfem_sg | meas4_accfem_sg];
+
+meas4_nomfem_pl = ("as+NOMFEM" : "as");
+meas4_datfem_pl = ("as+DATFEM" : "ām");
+meas4_pl = Optimize[meas4_nomfem_pl | meas4_datfem_pl];
+
+meas4_fem_sg = base_sg bytelib.kSpace fem4_measures meas4_sg;
+meas4_fem_pl = base_pl bytelib.kSpace fem4_measures meas4_pl;
+
+fem5_measures = "minūt" | "sekund";
+
+meas5_nomfem_sg = ("es+NOMFEM" : "e");
+meas5_datfem_sg = ("es+DATFEM" : "es");
+meas5_accfem_sg = ("es+ACCFEM" : "i");
+meas5_locfem_sg = ("es+LOCFEM" : "ē");
+meas5_sg = Optimize[meas5_nomfem_sg | meas5_datfem_sg | meas5_accfem_sg | meas5_locfem_sg];
+
+meas5_nomfem_pl = ("es+NOMFEM" : "es");
+meas5_datfem_pl = ("es+DATFEM" : "ēm");
+meas5_locfem_pl = ("es+LOCFEM" : "ēs");
+meas5_pl = Optimize[meas5_nomfem_pl | meas5_datfem_pl | meas5_locfem_pl];
+
+meas5_fem_sg = base_sg bytelib.kSpace fem5_measures meas5_sg;
+meas5_fem_pl = base_pl bytelib.kSpace fem5_measures meas5_pl;
+
+measures = Optimize[meas1_mas_sg | meas1_mas_pl | meas2_mas_sg | meas2_mas_pl | meas4_fem_sg | meas4_fem_pl | meas5_fem_sg | meas5_fem_pl];
+
+
+export DECLENSIONS = Optimize[base | year | times | measures | zero];
