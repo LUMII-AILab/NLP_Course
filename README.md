@@ -15,6 +15,11 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 4. Plaša pārklājuma latviešu valodas risinājums: [TezaursAPI.ipynb](notebooks/TezaursAPI.ipynb)
 5. Teksta izvēršana un savēršana: [OpenGrm.ipynb](notebooks/OpenGrm.ipynb)
 
+### Statistiskie valodas modeļi
+
+6. N-grammu modeļi: TBA
+7. Teksta klasificēšana: [TextClassification.ipynb](notebooks/TextClassification.ipynb)
+
 ## Autori
 
 prof. Inguna Skadiņa\

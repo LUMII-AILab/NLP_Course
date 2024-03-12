@@ -15,8 +15,6 @@
 
 import 'byte.grm' as bytelib;
 import 'numbers.grm' as numbers;
-import 'abbrevs.grm' as abbrevs;
-import 'declensions.grm' as decline;
 
 
 trim_spaces = (bytelib.kSpace* : "");
@@ -26,17 +24,10 @@ reduce_spaces = (bytelib.kSpace+ : " ");
 word = bytelib.kNotSpace+;
 
 number = numbers.NUMBERS;
-abbrev = abbrevs.ABBREVS;
 
-token_1 = (word <1.5>) | number | abbrev;
+token = (word <1.5>) | number;
 
-tokenize_sentence = trim_spaces token_1 (reduce_spaces token_1)* trim_spaces;
-
-decline = decline.DECLINATIONS;
-
-token_2 = (word <1.5>) | decline;
-
-declinate = trim_spaces token_2 (reduce_spaces token_2)* trim_spaces;
+tokenize_sentence = trim_spaces token (reduce_spaces token)* trim_spaces;
 
 
-export TOKENIZER = Optimize[tokenize_sentence | declinate];
+export TOKENIZER = Optimize[tokenize_sentence];

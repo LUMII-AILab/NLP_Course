@@ -281,7 +281,6 @@ measurements_mas =
 	| ("mol"              : "mol")
 	| ("milimol"          : "mmol")
 	| ("mikromol"         : "µmol")
-	| ("miljon"           : "milj.")
 	| ("procent"          : "%");
 
 mas_decl =
@@ -297,8 +296,7 @@ mas_decl =
 masculine = measurements_mas mas_decl;
 
 measurements_fem1 =
-	  ("stund"    : "h")
-	| ("svārstīb" : "sv.");
+	  ("stund" : "h");
 
 fem1_decl =
 	  ("a"  : "")
@@ -313,8 +311,7 @@ feminine1 = measurements_fem1 fem1_decl;
 measurements_fem2 =
 	  ("minūt"  : "min.")
 	| ("reiz"   : "x")
-	| ("sekund" : "sek.")
-	| ("tablet" : "tab.");
+	| ("sekund" : "sek.");
 
 fem2_decl =
 	  ("e"  : "")
@@ -327,8 +324,7 @@ fem2_decl =
 plural_gen_fem2 =
 	  ("minūšu"  : "min.")
 	| ("reižu"   : "x")
-	| ("sekunžu" : "sek.")
-	| ("tablešu" : "tab.");
+	| ("sekunžu" : "sek.");
 
 feminine2 = (measurements_fem2 fem2_decl | plural_gen_fem2);
 
@@ -346,54 +342,6 @@ meas1 = Optimize[masculine | feminine1 | feminine2];
 combined_meas = meas1 delspace insslash measurements_loc;
 
 measurements = Optimize[combined_meas | meas1];
-
-descriptors =
-	  ("aug" ("lis" | "li" | "ļa" | "lī" | "lim"))
-	| ("ar")
-	| ("bioptāt" ("s" | "u" | "a" | "ā" | "am"))
-	| ("blok" ("s" | "u" | "a" | "ā" | "am"))
-	| ("daiv" ("a" | "u" | "as" | "ā" | "ai"))
-	| ("daļ" ("a" | "u" | "as" | "ā" | "ai"))
-	| ("dren" ("a" | "u" | "as" | "ā" | "ai"))
-	| ("dzemdīb" ("as" | "u" | "ās" | "ām"))
-	| ("elektrod" ("s" | "u" | "a" | "ā" | "am"))
-	| ("gal" ("s" | "u" | "a" | "ā" | "am"))
-	| ("gabal" ("s" | "u" | "a" | "ā" | "am"))
-	| ("ir")
-	| ("kambar" ("is" | "i" | "a" | "ī" | "im"))
-	| ("kārt" ("a" | "u" | "as" | "ā" | "ai"))
-	| ("konglomerāt" ("s" | "u" | "a" | "ā" | "am"))
-	| ("konkrement" ("s" | "u" | "a" | "ā" | "am"))
-	| ("limfmezgl" ("s" | "u" | "a" | "ā" | "am"))
-	| ("līme" ("nis" | "ni" | "ņa" | "nī" | "nim"))
-	| ("mais" ("s" | "u" | "a" | "ā" | "am"))
-	| ("mal" ("a" | "u" | "as" | "ā" | "ai"))
-	| ("mezgl" ("s" | "u" | "a" | "ā" | "am"))
-	| ("no")
-	| ("olnīc" ("a" | "u" | "as" | "ā" | "ai"))
-	| ("olvad" ("s" | "u" | "a" | "ā" | "am"))
-	| ("oriģināl" ("s" | "u" | "a" | "ā" | "am"))
-	| ("otr" ("s" | "u" | "a" | "ā" | "am" | "as" | "ai"))
-	| ("pa" ("ts" | "šu" | "ša" | "šā" | "šam" | "ti" | "šai" | "šas"))
-	| ("perēk" ("lis" | "li" | "ļa" | "lī" | "lim"))
-	| ("pēc")
-	| ("pie")
-	| ("pol" ("s" | "u" | "a" | "ā" | "am"))
-	| ("poz" ("a" | "u" | "as" | "ā" | "ai"))
-	| ("pozīcij" ("a" | "u" | "as" | "ā" | "ai"))
-	| ("preparāt" ("s" | "u" | "a" | "ā" | "am"))
-	| ("projekcij" ("a" | "u" | "as" | "ā" | "ai"))
-	| ("punkt" ("s" | "u" | "a" | "ā" | "am"))
-	| ("pus" ("e" | "i" | "es" | "ē" | "ei"))
-	| ("reiz" ("e" | "i" | "es" | "ē" | "ei"))
-	| ("sargmezgl" ("s" | "u" | "a" | "ā" | "am"))
-	| ("sīk" ("s" | "u" | "a" | "ā" | "am" | "as" | "ai"))
-	| ("un")
-	| ("veidojum" ("s" | "u" | "a" | "ā" | "am"))
-	| ("viet" ("a" | "u" | "as" | "ā" | "ai"))
-	| ("virs")
-	| ("zem")
-	;
 
 times = (" reiz " : " x ");
 
@@ -432,114 +380,9 @@ segments = inssegment (one_to_ten deldot | ordinal_one_to_ten) delspace delsegme
 
 insinterval = (" " : "–");
 
-interval_item = 
-	"S1" | "S2" | "S3" | "S4" | "S5" | "S6" | "S7" | "S8" | "S9" | "S10" |
-	"C1" | "C2" | "C3" | "C4" | "C5" | "C6" | "C7" |
-	"Th1" | "Th2" | "Th3" | "Th4" | "Th5" | "Th6" | "Th7" | "Th8" | "Th9" | "Th10" | "Th11" | "Th12" |
-	"L1" | "L2" | "L3" | "L4" | "L5";
+interval_item = "S1" | "S2" | "S3" | "S4" | "S5" | "S6" | "S7" | "S8" | "S9" | "S10";
 
 format_interval = interval_item insinterval interval_item;
-
-abbrevs =
-	  (("intravenozi"|"intravenoza"|"intravenozas"|"intravenozai"|"intravenozu"|"intravenozā"|"intravenozs"|"intravenozam"|"intravenoziem"|"intravenozām"|"intravenozus"|"intravenozos"|"intravenozās") : "i/v")
-	| (("intramuskulāri"|"intrmuskulāra"|"intramuskulāras"|"intramuskulārai"|"intramuskulāru"|"intramuskulārā"|"intramuskulārs"|"intramuskulāram"|"intramuskulāriem"|"intramuskulārām"|"intramuskulārus"|"intramuskulāros"|"intramuskulārās") : "i/m")
-	| (("kontrastviela"|"kontrastvielas"|"kontrastvielai"|"kontrastvielu"|"kontrastvielā"|"kontrastvielām"|"kontrastvielās") : "k/v")
-	| (("perorāli"|"perorāla"|"perorālas"|"perorālu"|"perorālā"|"perorāls"|"perorālus"|"perorālos"|"perorālās"|"perorālām"|"perorāliem"|"per os") : "p/o")
-	| (("limfmezglus"|"limfmezgli"|"limfmezgls"|"limfmezglu"|"limfmezglos"|"limfmezgliem"|"limfmezglā"|"limfmezgla"|"limfmezglam") : "l/m")
-	| (("no rīta"|"rītā"|"rītos"|"rīts") : "r.")
-	| (("pusdienlaikā"|"pusdienlaiks") : "p.")
-	| (("pa dienu"|"dienā") : "d.")
-	| (("vakarā"|"vakaros"|"uz vakaru") : "v.")
-	| (("naktī"|"naktīs"|"uz nakti"|"pa nakti") : "n.")
-	| (("rentgen" " "?|"rentgena "|"RTG ") ("pozitīvi"|"pozitīvs"|"pozitīvas"|"pozitīvu"|"pozitīvus"|"pozitīviem") : "RTG+")
-	| ("RTG" ("-"|" ") ("gramma"|"grammas"|"grammai"|"grammu"|"grammā"|"grammas"|"grammām"|"grammās") : "RTG-gr.")
-	| (("rentgen"|"rentgens"|"rentgena"|"rentgenam"|"rentgenu"|"rentgenā") : "RTG")
-	| (("negatīvs"|"negatīva"|"negatīvi"|"negatīvu"|"negatīvas"|"negatīvām"|"negatīvus"|"negatīviem") : "neg.")
-	| (("pozitīvs"|"pozitīva"|"pozitīvi"|"pozitīvu"|"pozitīvas"|"pozitīvām"|"pozitīvus"|"pozitīviem") : "poz.")
-	| (("temperatūra"|"temperatūru"|"temperatūras"|"temperatūrai"|"temperatūrā") : "t°")
-	| (("grādi"|"grādiem"|"grādus"|"grādos"|"grādu") " pēc Celsija" : "°C")
-	| (("kreisā"|"kreisās"|"kreisajā"|"kreisi"|"kreiso"|"kreisais"|"kreisai"|"kreisajam"|"kreisajai") : "kr.")
-	| (("labā"|"labās"|"labajā"|"labo"|"labais"|"labai"|"labajam"|"labajai") : "lb.")
-	| (("aksiāli"|"aksiāla"|"aksiālā"|"aksiālie"|"aksiālu"|"aksiālajiem"|"aksiālajā") : "ax.")
-	| (("sagitāli"|"sagitāla"|"sagitālām") : "sag.")
-	| (("koronāri"|"koronārās"|"koronāra"|"koronārām"|"koronārajās") : "cor.")
-	| (("solūcio"|"solucio"|"solutio"|"solution"|"solucion"|"sol"|"Sol") : "sol.")
-	| (("maksimāli"|"maksimālā"|"maksimālo"|"maksimālu"|"maksimāls"|"maksimāla"|"maksimālas"|"maksimālai"|"maksimālam") : "max.")
-	| (("dextra"|"dekstra"|"destra") : "dxtr.")
-	| (("pakāpe"|"pakāpes"|"pakāpi"|"pakāpē"|"pakāpei") : "pak.")
-	| (("sinistra") : "sin.")
-	| (("injekcijas"|"injekcijā"|"injekcijām"|"injekcija"|"injekciju"|"injekcijai"|"injekcijās") : "inj.")
-	| (("dzīvsudraba stabs"|"dzīvsudraba staba"|"dzīvsudraba stabam"|"dzīvsudraba stabu"|"dzīvsudraba stabā"|"dzīvsudrabs"|"dzīvsudraba"|"dzīvsudrabu") : "Hg")
-	| ("alfa" : "α")
-	| ("beta" : "β")
-	| ("gamma" : "γ")
-	| (("numur"|"numurs"|"nr") : "Nr.")
-	| ("Cito"|"cito" : "Cito!")
-	| ("bloki " ("plus"|"pluss") : "bloki: +")
-	| ("bloki " ("mīnus"|"mīnuss") : "bloki: -")
-	| ("stikli " ("plus"|"pluss") : "stikli: +")
-	| ("stikli " ("mīnus"|"mīnuss") : "stikli: -");
-
-instructions =
-	  (("daudzpunkts"|"daudzpunkti"|"daudzpunkte"|"daudzpunktus") : " … ")
-	| (("punkts"|"punktu") : " $PUNKTS$ ")
-	| (("jauns"|"jaunu"|"jaunā"|"nākamais"|"nākamo"|"nākamā"|"nākamajā") " " ("teikums"|"teikumu"|"teikumā") : " $PUNKTS$ ")
-	| ("komats"|"komatu"|"komatiņš"|"komatiņu" : ", ")
-	| ("semikols"|"semikolu" : "; ")
-	| ("kols"|"kolu" : ": ")
-	| ("ar "? ("izsaukuma zīme"|"izsaukuma zīmi"|"izsaukumzīme"|"izsaukumzīmi") : "! ")
-	| ("slīpsvītra"|"slīpsvītru"|"šķērssvītra"|"šķērssvītru"|"slīpa svītra" : "/")
-	| ("domu" " "? ("zīme"|"zīmi"|"zīmīte"|"zīmīti"|"svītra"|"svītru"|"svītriņa"|"svītriņu") : " – ")
-	| ("svītra"|"svītru"|"svītriņa"|"svītriņu"|"strīpa"|"strīpu"|"strīpiņa"|"strīpiņu" : "-")
-	| (("iekavas"|"iekaviņas") " " ("ciet"|"aizvērt"|"slēgt"|"aizveram"|"slēdzam"|"aizveriet"|"slēdziet"|"aizverat"|"slēdzat") : ") ")
-	| (("ciet"|"aizvērt"|"slēgt"|"aizveram"|"slēdzam"|"aizveriet"|"slēdziet"|"aizverat"|"slēdzat") " " ("iekavas"|"iekaviņas") : ") ")
-	| ((("vaļā"|"atvērt"|"atveram"|"atveriet"|"atverat") " ")? ("iekavas"|"iekavās"|"iekaviņas"|"iekaviņās") : " (")
-	| (("iekavas"|"iekavās"|"iekaviņas"|"iekaviņās") (" " ("vaļā"|"atvērt"|"atveram"|"atveriet"|"atverat"))? : " (")
-	| ("pēdiņas"|"pēdiņās" : "\"")
-	| ((("zem"|"ar") " ")? "jautājuma " ("zīme"|"zīmes"|"zīmi"|"zīmīte"|"zīmītes"|"zīmīti") : " (?) ")
-	| (("ar " ("lieliem"|"lielajiem") " burtiem") : " ")
-	| ((("ar" (" " ("atkāpi"|"atkāpīti"))?|"no") " ")? ("jauna"|"jaunas"|"jaunu"|"jaunā"|"nākamā"|"nākamās"|"nākamo"|"nākamajā") " " ("rinda"|"rindas"|"rindu"|"rindā"|"rindkopa"|"rindkopas"|"rindkopu"|"rindkopā") : " $ENTER$ ")
-	| (("patohistoloģiskais"|"patohistoloģijas"|"histopatoloģiskais"|"histopatoloģijas"|"histoloģiskais"|"histoloģijas"|"patoloģiskais"|"patoloģijas") " " ("izmeklējums"|"izmeklējumā") : "$HISTOPATOLOĢISKAIS_IZMEKLĒJUMS$")
-	| (("izmeklējums"|"izmeklējumā") " " ("rakstām"|"rakstam"|"rakstāma"|"rakstīsim"|"ierakstam"|"ierakstām"|"ierakstīsim") : " $IZMEKLĒJUMS$ ")
-	| (("patohistoloģiskais"|"patohistoloģijas"|"histopatoloģiskais"|"histopatoloģijas"|"histoloģiskais"|"histoloģijas"|"patoloģiskais"|"patoloģijas") " " ("apraksts"|"teksts"|"aprakstā"|"tekstā") : " $HISTOPATOLOĢISKAIS_APRAKSTS$ ")
-	| (("makroskopiskais"|"makroskopiskajā") " " ("apraksts"|"aprakstā") : " $MAKROSKOPISKAIS_APRAKSTS$ ")
-	| (("mikroskopiskais"|"mikroskopiskajā") " " ("apraksts"|"aprakstā") : " $MIKROSKOPISKAIS_APRAKSTS$ ")
-	| (("kolonoskopijas"|"kolonoskopiskais"|"kolonoskopiskajā") " " ("apraksts"|"aprakstā") : " $KOLONOSKOPIJAS_APRAKSTS$ ")
-	| (("apraksts"|"teksts"|"aprakstā"|"tekstā") " " ("rakstām"|"rakstam"|"rakstāma"|"rakstīsim"|"ierakstam"|"ierakstām"|"ierakstīsim") : " $APRAKSTS$ ")
-	| ("atrade un interpretācija" : " $ATRADE_UN_INTERPRETĀCIJA$ ")
-	| (("klīniskais"|"klīnisko"|"klīniskajā"|"klīniskajos") " " ("slēdziens"|"slēdzienā"|"secinājums"|"secinājumi"|"secinājumā"|"secinājumos"|"atzinums"|"atzinumā") : " $KLĪNISKAIS_SLĒDZIENS$ ")
-	| (("patohistoloģiskais"|"patohistoloģijas"|"histopatoloģiskais"|"histopatoloģijas"|"histoloģiskais"|"histoloģijas"|"patoloģiskais"|"patoloģijas") " " ("slēdziens"|"slēdzienā"|"secinājums"|"secinājumi"|"secinājumā"|"secinājumos"|"atzinums"|"atzinumā") : " $HISTOPATOLOĢISKAIS_SLĒDZIENS$ ")
-	| (("slēdziens"|"slēdzienā"|"secinājums"|"secinājumi"|"secinājumā"|"secinājumos") : " $SLĒDZIENS$ ")
-	| (("diktāts"|"diktāta"|"diktātam"|"diktātu"|"diktātā") " " ("sāku"|"sākas"|"sākums"|"sākumā"|"sākot") : " $SĀKUMS$ ")
-	| (("sāku"|"sākas"|"sākums"|"sākumā"|"sākot") " " ("diktāts"|"diktāta"|"diktātam"|"diktātu"|"diktātā") : " $SĀKUMS$ ")
-	| (("diktāts"|"diktāta"|"diktātam"|"diktātu"|"diktātā") " " ("beidzu"|"beidzas"|"beigas"|"beigās"|"beidzot") : " $BEIGAS$ ")
-	| (("beidzu"|"beidzas"|"beigas"|"beigās"|"beidzot") " " ("diktāts"|"diktāta"|"diktātam"|"diktātu"|"diktātā") : " $BEIGAS$ ")
-	| ("un "? "tālāk "? "lūdzu "? ("rakstām"|"rakstam"|"rakstāma"|"rakstīsim"|"ierakstam"|"ierakstām"|"ierakstīsim") " lūdzu"? (" " ("tā"|"ka"))? : " ")
-	| ("tas " "arī"? " viss" : " ")
-	| (("paldies"|("es "? "atvainojos")|"atvainojiet"|"piedodiet") : " ");
-
-tens_with_one =
-	magnitudes ten delspace one |
-	declined_units sep_ten delspace one;
-
-hundreds_with_one =
-	magnitudes hundred delspace tens_with_one |
-	magnitudes hundred inszero delspace one |
-	declined_units sep_hundred delspace tens_with_one |
-	declined_units sep_hundred inszero delspace one;
-
-thousands_with_one =
-	magnitudes thousand delspace hundreds_with_one |
-	magnitudes thousand inszero delspace tens_with_one |
-	magnitudes thousand inszero inszero delspace one |
-	declined_units sep_thousand delspace hundreds_with_one |
-	declined_units sep_thousand inszero delspace tens_with_one |
-	declined_units sep_thousand inszero inszero delspace one;
-
-ends_with_one = Optimize[tens_with_one | hundreds_with_one | thousands_with_one];
-
-keep_one = ends_with_one space (instructions | descriptors) |
-	   "vien" ("s" | "u" | "a" | "ā" | "am" | "as" | "ai") space descriptors;
 
 
 export INVERSE = Optimize[
@@ -553,9 +396,6 @@ export INVERSE = Optimize[
 	| multiplication
 	| division
 	| interval
-	| keep_one
 	| segments
 	| format_interval
-	| abbrevs
-	| instructions
 ];

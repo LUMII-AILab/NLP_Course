@@ -409,15 +409,12 @@ measurements_mas =
 	| ("ng"             : "nanogrami")
 	| ("mol"            : "moli")
 	| ("mmol"           : "milimoli")
-	| (("µmol"|"mkmol") : "mikromoli")
-	| ("milj."          : "miljoni");
+	| (("µmol"|"mkmol") : "mikromoli");
 
 measurements_fem =
 	  ("h"              : "stundas")
 	| ("min"            : "minūtes")
-	| (("sek"|"s")      : "sekundes")
-	| ("sv"             : "svārstības")
-	| (("Tb."|"tb."|"Tab."|"tab."|"Tbl."|"tbl."|"Tabl."|"tabl.") : "tabletes");
+	| (("sek"|"s")      : "sekundes");
 
 measurements_loc =
 	  (("Ø"|"diam.")    : "diametrā")
@@ -426,12 +423,7 @@ measurements_loc =
 	| (("µl"|"mkl")     : "mikrolitrā")
 	| ("h"              : "stundā")
 	| ("min"            : "minūtē")
-	| (("sek"|"s")      : "sekundē")
-	| ("r."             : "rītā")
-	| ("p."             : "pusdienlaikā")
-	| ("d."             : "dienā")
-	| (("vak."|"v.")    : "vakarā")
-	| ("n."             : "naktī");
+	| (("sek"|"s")      : "sekundē");
 
 measure =
 	(cardinals_sg | decimals_sg) nomfem_mark space measurements_fem nomfem_mark ((delspace)? delslash (delspace)? measurements_loc)? |
