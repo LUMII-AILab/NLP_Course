@@ -1,0 +1,1 @@
+Šī datu kopa ir atvasināta no [20 Newsgroup DataSet](https://www.kaggle.com/datasets/au1206/20-newsgroup-original).
