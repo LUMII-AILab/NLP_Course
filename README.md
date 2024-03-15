@@ -12,7 +12,7 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 ### Galīgie automāti un pārveidotāji
 
 3. Morfoloģiskā analīze un sintēze: [HFST.ipynb](notebooks/HFST.ipynb)
-4. Teksta izvēršana un savēršana: [OpenGrm.ipynb](notebooks/OpenGrm.ipynb)
+4. Teksta izvēršana un savēršana: [Thrax.ipynb](notebooks/Thrax.ipynb), [Pynini.ipynb](notebooks/Pynini.ipynb)
 
 ### Gramatiskā analīze
 
