@@ -17,7 +17,7 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 ### Gramatiskā analīze
 
 5. Latviešu valodas morfoloģiskais analizators un sintezators: [TezaursAPI.ipynb](notebooks/TezaursAPI.ipynb)
-6. Rīkkopas universālo atkarību parsēšanai: TBA
+6. Rīkkopas universālo atkarību parsēšanai: [ParsingUD.ipynb](notebooks/ParsingUD.ipynb)
 
 ### Statistiskie valodas modeļi
 
