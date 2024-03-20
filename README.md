@@ -23,7 +23,7 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 
 7. N-grammu modeļi: TBA
 8. Teksta klasificēšana: [TextClassification.ipynb](notebooks/TextClassification.ipynb)
-9. Word2vec: [w2vec.ipynb](notebooks/w2vec.ipynb)
+9. Word2vec apmācība un lietojums: [w2vec.ipynb](notebooks/w2vec.ipynb)
 
 ## Autori
 
