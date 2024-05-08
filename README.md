@@ -21,9 +21,9 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 
 ### Statistiskie valodas modeļi
 
-7. N-grammu modeļi: TBA
-8. Teksta klasificēšana: [TextClassification.ipynb](notebooks/TextClassification.ipynb)
-9. Word2vec apmācība un lietojums: [Word2vec.ipynb](notebooks/Word2vec.ipynb)
+7. N-grammu modeļi: [NGram.ipynb](notebooks/NGram.ipynb)
+8. Word2vec apmācība un lietojums: [Word2vec.ipynb](notebooks/Word2vec.ipynb)
+9. Teksta klasificēšana: [LangID.ipynb](notebooks/LangID.ipynb), [NaiveBayes.ipynb](notebooks/NaiveBayes.ipynb), [fastText.ipynb](notebooks/fastText.ipynb)
 
 ## Autori
 
