@@ -23,7 +23,16 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 
 7. N-grammu modeļi: [NGram.ipynb](notebooks/NGram.ipynb)
 8. Word2vec apmācība un lietojums: [Word2vec.ipynb](notebooks/Word2vec.ipynb)
-9. Teksta klasificēšana: [LangID.ipynb](notebooks/LangID.ipynb), [NaiveBayes.ipynb](notebooks/NaiveBayes.ipynb), [fastText.ipynb](notebooks/fastText.ipynb)
+9. Teksta klasificēšana: [LangID.ipynb](notebooks/LangID.ipynb), [NaiveBayes.ipynb](notebooks/NaiveBayes.ipynb)
+
+### Neironu valodas modeļi
+
+10. Teksta klasificēšana: [fastText.ipynb](notebooks/fastText.ipynb) (*1-layer*, *linear*) &rarr; [BERT.ipynb](notebooks/BERT.ipynb) (*deep*, *non-linear*)
+11. Modeļi un demonstrācijas Hugging Face platformā:
+- Skatīt [Tasks](https://huggingface.co/tasks), piemēram:
+  - `Feature Extraction`: [AiLab-IMCS-UL/lvbert](https://huggingface.co/AiLab-IMCS-UL/lvbert)
+  - `Fill-Mask`: [google-bert/bert-base-cased](https://huggingface.co/google-bert/bert-base-cased)
+  - `Sentence Similarity`: [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
 
 ## Autori
 
