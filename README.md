@@ -33,6 +33,7 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
   - `Feature Extraction`: [AiLab-IMCS-UL/lvbert](https://huggingface.co/AiLab-IMCS-UL/lvbert)
   - `Fill-Mask`: [google-bert/bert-base-cased](https://huggingface.co/google-bert/bert-base-cased)
   - `Sentence Similarity`: [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
+12. Vārdšķiru un morfoloģiskā marķēšana (Part of Speech (POS) Tagging): [POS_tagging.ipynb](notebooks/POS_tagging.ipynb)
 
 ## Autori
 
