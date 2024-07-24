@@ -38,8 +38,8 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 
 ### [BSSDH 2024 Workshop 4](https://www.digitalhumanities.lv/bssdh/2024/lectures-and-workshops/)
 
-12. Introduction: [slides](notebooks/resources/BSSDH2024/Intro.pdf)
-13. Hands-on session: [notebook](notebooks/BSSDH2024.ipynb) (draft)
+14. Introduction: [slides](notebooks/resources/BSSDH2024/Intro.pdf)
+15. Hands-on session: [notebook](notebooks/BSSDH2024.ipynb) (draft)
 
 ## Autori
 
