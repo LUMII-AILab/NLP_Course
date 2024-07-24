@@ -34,6 +34,11 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
   - `Fill-Mask`: [google-bert/bert-base-cased](https://huggingface.co/google-bert/bert-base-cased)
   - `Sentence Similarity`: [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
 
+### [BSSDH 2024 Workshop 4](https://www.digitalhumanities.lv/bssdh/2024/lectures-and-workshops/)
+
+12. Introduction: slides
+13. Hands-on session: [notebook](notebooks/BSSDH2024.ipynb) (draft)
+
 ## Autori
 
 prof. Inguna Skadiņa\
