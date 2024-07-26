@@ -40,6 +40,7 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 
 14. Introduction: [slides](notebooks/resources/BSSDH2024/Intro.pdf)
 15. Hands-on session: [notebook](notebooks/BSSDH2024.ipynb) (draft)
+16. Initial results: [corpus](https://sandbox.nosketch.korpuss.lv/#dashboard?corpname=BSSDH2024) (vers. 0.1)
 
 ## Autori
 
