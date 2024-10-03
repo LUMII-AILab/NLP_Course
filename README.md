@@ -42,6 +42,14 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 15. Hands-on session: [notebook](notebooks/BSSDH2024.ipynb) (draft)
 16. Initial results: [corpus](https://sandbox.nosketch.korpuss.lv/#dashboard?corpname=BSSDH2024) (vers. 0.1)
 
+# Ievads datorlingvistika (SDSKM018)
+
+LU HZF magistra studiju programmas kurss
+
+### Teksta korpusa izveide
+
+### Teksta korpusa marķēšana
+
 ## Autori
 
 prof. Inguna Skadiņa\
