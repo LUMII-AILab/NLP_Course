@@ -47,7 +47,7 @@ LU Datorikas fakultātes Bakalaura studiju programmas kurss
 LU HZF magistra studiju programmas kurss
 
 1. Teksta korpusa izveide
-2. Teksta korpusa marķēšana
+2. Teksta korpusa marķēšana:  [notebook](notebooks/NLPPipeSimple.ipynb)
 
 ## Autori
 
