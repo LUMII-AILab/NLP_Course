@@ -2,7 +2,7 @@
 
 LU Eksakto zinātņu un tehnoloģiju fakultātes Datorikas nodaļas Bakalaura studiju programmas kurss
 
-Datorlingvistiskas un valodu tehnoloģiju termini (https://github.com/LUMII-AILab/NLP_Course/blob/main/VTI_termini_pienemtie.pdf)
+Datorlingvistiskas un valodu tehnoloģiju termini: (VTI_termini_pienemtie.pdf)
 
 ## Praktiskie darbi
 
