@@ -2,6 +2,8 @@
 
 LU Eksakto zinātņu un tehnoloģiju fakultātes Datorikas nodaļas Bakalaura studiju programmas kurss
 
+Datorlingvistiskas un valodu tehnoloģiju termini
+
 ## Praktiskie darbi
 
 ### Rīkkopas valodas resursu priekšapstrādei
