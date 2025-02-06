@@ -1,6 +1,6 @@
 # Valodu tehnoloģiju pamati (DatZB022 / DatZ1373)
 
-LU Datorikas fakultātes Bakalaura studiju programmas kurss
+LU Eksakto zinātņu un tehnoloģiju fakultātes Datorikas nodaļas Bakalaura studiju programmas kurss
 
 ## Praktiskie darbi
 
