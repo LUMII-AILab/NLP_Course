@@ -14,7 +14,7 @@ Kursā izmantotie [termini](VTI_termini.pdf); sk. arī [Termini.gov.lv](https://
 
 ### Galīgie automāti un pārveidotāji
 
-4. Morfoloģiskā analīze un sintēze: [HFST.ipynb](notebooks/HFST.ipynb)
+4. Morfoloģiskā analīze un sintēze: [HFST.ipynb](notebooks/HFST.ipynb), [HFST_en_and_more.ipynb](notebooks/HFST_en_and_more.ipynb)
 5. Teksta izvēršana un savēršana: [Thrax.ipynb](notebooks/Thrax.ipynb), [Pynini.ipynb](notebooks/Pynini.ipynb)
 
 ### Gramatiskā analīze
