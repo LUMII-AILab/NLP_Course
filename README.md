@@ -25,7 +25,7 @@ Kursā izmantotie [termini](VTI_termini.pdf); sk. arī [Termini.gov.lv](https://
 ### Statistiskie valodas modeļi
 
 8. N-grammu modeļi: [NGram.ipynb](notebooks/NGram.ipynb)
-9. TF-IDF : [tf-idf.ipynb](notebooks/tf-idf.ipynb) un Word2vec apmācība un lietojums: [Word2vec.ipynb](notebooks/Word2vec.ipynb)
+9. TF-IDF : [tf-idf.ipynb](notebooks/tf_idf.ipynb) un Word2vec apmācība un lietojums: [Word2vec.ipynb](notebooks/Word2vec.ipynb)
 10. Teksta klasificēšana: [LangID.ipynb](notebooks/LangID.ipynb), [NaiveBayes.ipynb](notebooks/NaiveBayes.ipynb)
 
 ### Neironu valodas modeļi
