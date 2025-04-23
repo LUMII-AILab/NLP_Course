@@ -28,6 +28,8 @@ Kursā izmantotie [termini](VTI_termini.pdf); sk. arī [Termini.gov.lv](https://
 9. TF-IDF : [tf-idf.ipynb](notebooks/tf_idf.ipynb) un Word2vec apmācība un lietojums: [Word2vec.ipynb](notebooks/Word2vec.ipynb)
 10. Teksta klasificēšana: [LangID.ipynb](notebooks/LangID.ipynb), [NaiveBayes.ipynb](notebooks/NaiveBayes.ipynb)
 
+Linkolnas Universitātes vieslekcijas [(https://github.com/cfrantzidis/sleepCare)]
+
 ### Neironu valodas modeļi
 
 11. Teksta klasificēšana: [fastText.ipynb](notebooks/fastText.ipynb) (*1-layer*, *linear*) &rarr; [BERT.ipynb](notebooks/BERT.ipynb) (*deep*, *non-linear*)
