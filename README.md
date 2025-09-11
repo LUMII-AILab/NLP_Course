@@ -51,13 +51,15 @@ Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par 
 1. Teksta klasificēšana ar BERT: [TextClassificationWithBERT.ipynb](notebooks/MSP/TextClassificationWithBERT.ipynb)
 2. Tekstvienību klasificēšana ar BERT, T5 - interpunkcijas uzdevums
 
-## [BSSDH 2024 Workshop 4](https://www.digitalhumanities.lv/bssdh/2024/lectures-and-workshops/)
+## Citi praktiskie darbi
+
+### [BSSDH 2024 Workshop 4](https://www.digitalhumanities.lv/bssdh/2024/lectures-and-workshops/)
 
 1. Introduction: [slides](notebooks/resources/BSSDH2024/Intro.pdf)
 2. Hands-on session: [notebook](notebooks/BSSDH2024.ipynb) (draft)
 3. Initial results: [corpus](https://sandbox.nosketch.korpuss.lv/#dashboard?corpname=BSSDH2024) (draft)
 
-## Ievads datorlingvistikā (SDSKM018)
+### Ievads datorlingvistikā (SDSKM018)
 
 LU HZF maģistra studiju programmas kurss:
 
