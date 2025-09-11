@@ -1,10 +1,13 @@
-# Valodu tehnoloģiju pamati (DatZB022)
+# Praktiskie darbi valodu tehnoloģijās
 
-LU Eksakto zinātņu un tehnoloģiju fakultātes Datorikas nodaļas Bakalaura studiju programmas kurss.
+LU Eksakto zinātņu un tehnoloģiju fakultātes Datorikas nodaļas bakalaura un maģistra studiju programmas kursi:
+
+* BSP: Valodu tehnoloģiju pamati (DatZB022-LV, DatZB022-EN)
+* MSP: Valodu tehnoloģiju lietojumi (DatZM037)
 
 Kursā izmantotie [termini](VTI_termini.pdf); sk. arī [Termini.gov.lv](https://termini.gov.lv).
 
-## Praktiskie darbi
+## BSP praktiskie darbi
 
 ### Rīkkopas valodas resursu priekšapstrādei
 
@@ -41,6 +44,13 @@ Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par 
 13. Vārdšķiru un morfoloģiskā marķēšana (Part of Speech (POS) Tagging): [POS_tagging.ipynb](notebooks/POS_tagging.ipynb)
 14. Nosaukto entitāšu marķēšana (Named entity recognition): [NER.ipynb](notebooks/NER.ipynb)
 
+## MSP praktiskie darbi
+
+### Kodētāju un kodētāju-dekodētāju izmantošana, pielāgošana
+
+1. Teksta klasificēšana ar BERT: [TextClassificationWithBERT.ipynb](notebooks/MSP/TextClassificationWithBERT.ipynb)
+2. Tekstvienību klasificēšana ar BERT, T5 - interpunkcijas uzdevums
+
 ## [BSSDH 2024 Workshop 4](https://www.digitalhumanities.lv/bssdh/2024/lectures-and-workshops/)
 
 1. Introduction: [slides](notebooks/resources/BSSDH2024/Intro.pdf)
@@ -57,8 +67,9 @@ LU HZF maģistra studiju programmas kurss:
 ## Autori
 
 prof. Inguna Skadiņa\
-asoc. prof. Normunds Grūzītis\
-asistents Viesturs Jūlijs Lasmanis
+prof. Normunds Grūzītis\
+Viesturs Jūlijs Lasmanis\
+Artūrs Znotiņš
 
 ## Atbalsts
 
