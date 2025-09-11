@@ -49,7 +49,7 @@ Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par 
 ### Kodētāju un kodētāju-dekodētāju izmantošana, pielāgošana
 
 1. Teksta klasificēšana ar BERT: [TextClassificationWithBERT.ipynb](notebooks/MSP/TextClassificationWithBERT.ipynb)
-2. Tekstvienību klasificēšana ar BERT, T5 - interpunkcijas uzdevums
+2. Tekstvienību klasificēšana ar BERT, T5 - interpunkcijas uzdevums: [bert_punctuation.ipynb](notebooks/MSP/bert_punctuation.ipynb), [seq2seq_punctuation.ipynb](notebooks/MSP/seq2seq_punctuation.ipynb)
 
 ## Citi praktiskie darbi
 
