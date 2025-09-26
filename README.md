@@ -50,6 +50,7 @@ Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par 
 
 1. Teksta klasificēšana ar BERT: [TextClassificationWithBERT.ipynb](notebooks/MSP/TextClassificationWithBERT.ipynb)
 2. Tekstvienību klasificēšana ar BERT, T5 - interpunkcijas uzdevums: [bert_punctuation.ipynb](notebooks/MSP/bert_punctuation.ipynb), [seq2seq_punctuation.ipynb](notebooks/MSP/seq2seq_punctuation.ipynb)
+3. LLM darbināšana, izmantojot Ollama: [ollama_LLMs_prompting.ipynb](notebooks/MSP/ollama_LLMs_prompting.ipynb)
 
 ## Citi praktiskie darbi
 
