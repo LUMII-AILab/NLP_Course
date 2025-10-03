@@ -50,8 +50,8 @@ Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par 
 
 1. Teksta klasificēšana ar BERT: [TextClassificationWithBERT.ipynb](notebooks/MSP/TextClassificationWithBERT.ipynb)
 2. Tekstvienību klasificēšana ar BERT, T5 - interpunkcijas uzdevums: [bert_punctuation.ipynb](notebooks/MSP/bert_punctuation.ipynb), [seq2seq_punctuation.ipynb](notebooks/MSP/seq2seq_punctuation.ipynb)
-3. Tekstvienību pozicionālā kodēšana: [positional_encoding.ipynb](notebooks/MSP/positional_encoding.ipynb), [seq2seq_punctuation.ipynb](notebooks/MSP/seq2seq_punctuation.ipynb)
-4. BERT jēdzienvektoru dimensiju reducēšana, vizualizēšana: [PCA_of_BERT_embeddings.ipynb](notebooks/MSP/positional_encoding.ipynb), [seq2seq_punctuation.ipynb](notebooks/MSP/PCA_of_BERT_embeddings.ipynb)
+3. Tekstvienību pozicionālā kodēšana: [positional_encoding.ipynb](notebooks/MSP/positional_encoding.ipynb)
+4. BERT jēdzienvektoru dimensiju reducēšana, vizualizēšana: [PCA_of_BERT_embeddings.ipynb](notebooks/MSP/positional_encoding.ipynb)
 
 ### Dekodētāju izmantošana, pielāgošana, novērtēšana
 
