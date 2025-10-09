@@ -1,0 +1,607 @@
+[
+	{
+		"ref": "biology_2023_1_3",
+		"question": "Olbaltumvielas sintēzē ir iesaistītas nukleīnskābes. Kura nukleīnskābe pārnes aminoskābi uz olbaltumvielu sintēzes vietu šūnā?",
+		"options": {
+			"A": "DNS",
+			"B": "mRNS",
+			"C": "tRNS",
+			"D": "rRNS"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "biology_2023_1_7",
+		"question": "Imūnvielu sintēze cilvēkā var tikt traucēta, ja ir nepilnvērtīgs uzturs. Kuras vielas visvairāk nepieciešamas imūnvielu sintēzei?",
+		"options": {
+			"A": "lipīdi",
+			"B": "vitamīni",
+			"C": "ogļhidrāti",
+			"D": "olbaltumvielas"
+		},
+		"answer": "D"
+	},
+	{
+		"ref": "biology_2023_1_10",
+		"question": "Cilvēkam deguna formu nosaka viena gēna alēles: dominantā alēle (D) nosaka taisna deguna veidošanos, bet recesīvā (d) – uzrauta deguna veidošanos. Kādi ir varbūtējie pēcnācēju genotipi, ja mātei ir uzrauts deguns, bet tēvam – taisns un ja viņa genotips ir heterozigotisks?",
+		"options": {
+			"A": "100 % taisns deguns",
+			"B": "75 % taisns, 25 % uzrauts deguns",
+			"C": "100 % Dd",
+			"D": "50 % Dd, 50 % dd"
+		},
+		"answer": "D"
+	},
+	{
+		"ref": "biology_2023_1_13",
+		"question": "Cilvēka normālas embrionālās attīstības laikā diferenciācijas procesā no zigotas rodas sirds muskuļu šūnas, neironi smadzenēs un plaušu epitēlija šūnas. Kurš apgalvojums par nosauktajām šūnām ir patiess?",
+		"options": {
+			"A": "tikai zigota satur DNS",
+			"B": "visām attēlotajām šūnām ir identisks DNS",
+			"C": "zigotas DNS ir atšķirīga no pārējo šūnu DNS",
+			"D": "zigotas DNS atšķiras no pārējo, bet ne visu šūnu DNS"
+		},
+		"answer": "B"
+	},
+	{
+		"ref": "biology_2023_1_14",
+		"question": "Daudziem koraļļiem ir koša krāsa, kuru tiem piešķir starpšūnu vielā dzīvojošās aļģes. Aļģes daļēji nodrošina koraļļus ar organiskām vielām, jo koraļļi paši nespēj saķert pietiekami daudz sīkbūtņu. Koraļļu kolonija ir aļģēm drošs patvērums, turklāt koraļļu izdalītie slāpekli saturošie vielmaiņas galaprodukti veicina aļģu augšanu. Kurš jēdziens pareizi raksturo koraļļu un aļģu mijiedarbību?",
+		"options": {
+			"A": "neitrālisms",
+			"B": "parazītisms",
+			"C": "komensālisms",
+			"D": "mutuālisms"
+		},
+		"answer": "D"
+	},
+	{
+		"ref": "biology_2023_1_17",
+		"question": "Parastā apse ir viena no Latvijā izplatītākajām koku sugām, kura veido blīvas audzes. Kurš abiotiskais faktors ierobežo jauno apšu augšanu?",
+		"options": {
+			"A": "gaismas pieejamība zem pieaugušo koku lapotnes",
+			"B": "skābekļa pieejamība gaisā",
+			"C": "patogēno sēņu klātbūtne augsnē",
+			"D": "vaboles lapu koku tinējsmecernieka masveida savairošanās"
+		},
+		"answer": "A"
+	},
+	{
+		"ref": "biology_2023_1_21",
+		"question": "Sienāžiem ir raksturīgas lēcējkājas, ar kuru palīdzību kukaiņi pārvietojas zālājā. Lēcējkāju esamība ir piemērs",
+		"options": {
+			"A": "adaptācijai",
+			"B": "asimilācijai",
+			"C": "variabilitātei",
+			"D": "deģenerācijai"
+		},
+		"answer": "A"
+	},
+	{
+		"ref": "biology_2023_1_22",
+		"question": "Latvijas Universitātes Bioloģijas institūtā veiksmīgi noslēdzies projekts, kurā izstrādāti jauni materiāli augļu – īpaši aveņu un zemeņu – apstrādei ar bioloģiski noārdāmiem un mikrobiāli sintezētiem polimēra pārklājumiem. Eksperimentu laikā pētnieki veica biopolimēru producentu (baktēriju) atlasi. Viens no biopolimēriem ir bakteriālā celuloze, kuru var izmantot augļu pārklājumiem, bionoārdāmiem iepakošanas materiāliem. Īpaši augstu bakteriālās celulozes sintēzi var sasniegt ābolu sulas barotnē, izmantojot baktēriju Novacetimonas hansenii MSCL 1646, kas spēj efektīvi veidot biopolimēru no barotnē esošiem cukuriem. Izejviela biopolimēra sintēzei ir pārtikas pārstrādes rūpniecības blakusprodukti, piemēram, sūkalas, augu atlieku biomasa, melase. Vides un sabiedrības veselības problēmas: 1. Augļu un dārzeņu ražas zudums īsa realizācijas termiņa rezultātā; 2. Bioloģiskās daudzveidības samazināšanās; 3. Augsnes un ūdens piesārņojums ar produktu iepakojuma plastmasu; 4. Dažādu ar pārtikas ražošanu saistītu rūpniecības nozaru blakus produktu otrreizēja izmantošana; 5. Infekcijas slimību pandēmiju rašanās. Kuras vides un sabiedrības veselības problēmas var mazināt atklājuma ieviešana?",
+		"options": {
+			"A": "1., 2., 4.",
+			"B": "1., 3., 4.",
+			"C": "2., 3., 5.",
+			"D": "3., 4., 5."
+		},
+		"answer": "B"
+	},
+	{
+		"ref": "biology_2023_1_24",
+		"question": "Nonākot dabiskā vidē, piemēram, ģenētiski modificēti (ĢM) laši var radīt izmaiņas gan ekosistēmās, gan organismu iedzimtības materiālā. Kurš nav ĢM lašu radītais riska faktors?",
+		"options": {
+			"A": "izmainīto gēnu klātbūtne lašu genomā var mainīt citu gēnu ekspresiju",
+			"B": "iespējamas izmaiņas ekosistēmas bioloģiskajā daudzveidībā",
+			"C": "ĢM lašu iekļaušana cilvēku uzturā rada negatīvu publicitāti medijos",
+			"D": "ĢM laši konkurē ar dabisko lašu populāciju"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "biology_2023_1_25",
+		"question": "Viena DNS molekula tiek pavairota piecos polimerāzes ķēdes reakcijas ciklos. Cik DNS molekulas kopiju iegūs?",
+		"options": {
+			"A": "6",
+			"B": "16",
+			"C": "32",
+			"D": "64"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "chemestry_2023_1_1",
+		"question": "Kālija ķīmiskā reakcija ar ūdeni istabas temperatūrā notiek ar sprādzienu, bet kalcija reakcija ar ūdeni tādos pašos apstākļos notiek lēni. Kurš faktors nosaka aprakstīto ķīmisko reakciju ātrumu atšķirību?",
+		"options": {
+			"A": "spiediens",
+			"B": "katalizators",
+			"C": "vielu daba",
+			"D": "temperatūra"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "chemestry_2023_1_4",
+		"question": "Kuri ķīmiskās saites veidi ir kālija hidroksīdā KOH?",
+		"options": {
+			"A": "jonu saite un nepolāra kovalentā saite",
+			"B": "jonu saite un polāra kovalentā saite",
+			"C": "polāra un nepolāra kovalentā saite",
+			"D": "tikai polāras kovalentās saites"
+		},
+		"answer": "B"
+	},
+	{
+		"ref": "chemestry_2023_1_5",
+		"question": "Ar laiku sudraba rotaslietas apsūbē un kļūst tumšas, jo notiek ķīmiskā reakcija: 4Ag(c) + O2(g) + 2H2S(g) -> 2Ag2S(c) + 2H2O(šķ).",
+		"options": {
+			"A": "oksidēšanās ar pakāpi no 0 uz +1",
+			"B": "oksidēšanās ar pakāpi no 0 uz +2",
+			"C": "reducēšanās ar pakāpi no 0 uz +1",
+			"D": "reducēšanās ar pakāpi no +1 uz 0"
+		},
+		"answer": "A"
+	},
+	{
+		"ref": "chemestry_2023_1_7",
+		"question": "Hlorūdeņraža iegūšanu apraksta ķīmiskās reakcijas vienādojums: H2(g) + Cl2(g) <-> 2HCl(g) ∆H = –184,8 kJ. Kā jāmaina reakcijas norises apstākļi, lai palielinātu hlorūdeņraža iznākumu?",
+		"options": {
+			"A": "jāpaaugstina temperatūra",
+			"B": "jāpaaugstina spiediens",
+			"C": "jāpazemina temperatūra",
+			"D": "jāpazemina spiediens"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "chemestry_2023_1_9",
+		"question": "Kuras vielas šķīdumam ir vislielākā pH vērtība?",
+		"options": {
+			"A": "NaNO3",
+			"B": "Na2CO3",
+			"C": "Zn(NO)2",
+			"D": "NH4NO3"
+		},
+		"answer": "B"
+	},
+	{
+		"ref": "chemestry_2023_1_11",
+		"question": "Dots ķīmiskās reakcijas vienādojums: H2SO4 + H2O <-> H3O+ + HSO−4. Kurā atbildē norādīts konjugēts skābes/bāzes pāris?",
+		"options": {
+			"A": "H3O+/HSO4-",
+			"B": "H2SO4/H2O",
+			"C": "H3O+/H2O",
+			"D": "H3O+/H2SO4"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "chemestry_2023_1_13",
+		"question": "Neveicot aprēķinus, nosaki, kurā gadījumā sistēmas entropija palielinās!",
+		"options": {
+			"A": "CaCO3(c) -> CaO(c) + CO2(g)",
+			"B": "2Mg(c) + O2(g) -> 2MgO(c)",
+			"C": "N2(g) + 3H2(g) -> 2NH3(g)",
+			"D": "CO(g) + 3H2(g) -> CH4(g) + H2O(g)"
+		},
+		"answer": "A"
+	},
+	{
+		"ref": "chemestry_2023_1_14",
+		"question": "Kurš ir glikozes pilnīgas oksidēšanās reakcijas termoķīmiskais vienādojums?",
+		"options": {
+			"A": "C6H12O6 + 6O2 -> 6CO2 + 6H2O; ∆H = –2860 kJ/mol",
+			"B": "C6H12O6 + 3O2 -> 6CO + 6H2O; ∆H = –2011 kJ/mol",
+			"C": "C6H12O6 -> 2C2H5OH + 2CO2; ∆H = –69 kJ/mol",
+			"D": "C6H12O6 -> 2C3H6O3; ∆H = –120 kJ/mol"
+		},
+		"answer": "A"
+	},
+	{
+		"ref": "chemestry_2023_1_15",
+		"question": "Sāls elektrolīzes procesu apraksta šādi katodprocesa un anodprocesa vienādojumi. Anods: 2H2O – 4e– -> O2 + 4H+; Katods: 2H2O + 2e– -> H2 + 2OH–; Kura sāls šķīdumu vai kausējumu elektrolizēja?",
+		"options": {
+			"A": "KI kausējums",
+			"B": "KCl šķīdums",
+			"C": "KNO3 šķīdums",
+			"D": "CuSO4 šķīdums"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "chemestry_2023_1_16",
+		"question": "Kompleksā savienojuma [Cu(NH3)4](OH)2 ūdens šķīdumu izmanto dabisko polimēru šķīdināšanai, lai iegūtu dažādu veidu šķiedras un plēves. Kāds ir šīs vielas nosaukums pēc IUPAC nomenklatūras?",
+		"options": {
+			"A": "tetraamīnvara hidroksīds",
+			"B": "tetraamīnkuprāta(II) hidroksīds",
+			"C": "tetraamīnvara(II) hidroksīds",
+			"D": "tetraamīnvara dihidroksīds"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "chemestry_2023_1_17",
+		"question": "Metāls X veido sāli XCl2. Šī sāls sastāvā jonam X ir 28 elektroni. Nosaki metālu X!",
+		"options": {
+			"A": "Zn",
+			"B": "Cu",
+			"C": "Ni",
+			"D": "Fe"
+		},
+		"answer": "A"
+	},
+	{
+		"ref": "chemestry_2023_1_19",
+		"question": "Gaisu, kas piesārņots ar skābes tvaikiem, attīrīja, laižot cauri vielai X. Kura ir viela X?",
+		"options": {
+			"A": "kalcija oksīds",
+			"B": "silīcija(IV) oksīds",
+			"C": "fosfora(V) oksīds",
+			"D": "kalcija hlorīds"
+		},
+		"answer": "A"
+	},
+	{
+		"ref": "chemestry_2023_1_23",
+		"question": "Kālija dihromāts ir spēcīgs oksidētājs. Kurš produkts rodas reakcijā starp kālija dihromātu un etanolu?",
+		"options": {
+			"A": "CH2=CH2",
+			"B": "CH3CHO",
+			"C": "C2H5COOH",
+			"D": "HCOOCH3"
+		},
+		"answer": "B"
+	},
+	{
+		"ref": "chemestry_2023_1_25",
+		"question": "Sadedzinot divus litrus gāzveida ogļūdeņraža skābekļa pārākumā, izveidojās astoņi litri ogļskābās gāzes CO2 un desmit litru ūdens tvaika H2O. Visu vielu tilpumi mērīti vienādos apstākļos 100 °C un atmosfēras spiedienā. Kāda ir ogļūdeņraža molekulformula?",
+		"options": {
+			"A": "CH4",
+			"B": "C2H4",
+			"C": "C4H10",
+			"D": "C8H10"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "geography_2023_1_1",
+		"question": "Čīle un Peru ir vienas no lielākajām vara ieguves valstīm pasaulē. Kura reljefa forma saistāma ar vara ieguvi Dienvidamerikā?",
+		"options": {
+			"A": "Kordiljeru kalni",
+			"B": "Amazones līdzenums",
+			"C": "Gvajānas plakankalne",
+			"D": "Andu kalni"
+		},
+		"answer": "D"
+	},
+	{
+		"ref": "geography_2023_1_3",
+		"question": "Kāpēc savannas veģetācijā atšķirībā no stepēm daudz vairāk sastopami koki?",
+		"options": {
+			"A": "savannās ir siltāks, jo tās atrodas tuvāk ekvatoram nekā stepes",
+			"B": "savannās sarkanbrūnās augsnes ir auglīgākas nekā stepēs esošās melnzemes",
+			"C": "savannās gada nokrišņu daudzums vidēji ir lielāks nekā stepēs",
+			"D": "savannās augsne ir irdenāka nekā stepēs, un tā ļauj kokiem iesakņoties"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "geography_2023_1_5",
+		"question": "Kurš apgalvojums visprecīzāk raksturo vertikālo zonalitāti, palielinoties augstumam!",
+		"options": {
+			"A": "pieaug temperatūra, un skujkoku mežus nomaina tundra",
+			"B": "samazinās temperatūra, un skujkoku meži nomaina tundru",
+			"C": "samazinās temperatūra, un skujkoku mežus nomaina tundra",
+			"D": "pieaug temperatūra, un tundra nomaina skujkoku mežus"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "geography_2023_1_7",
+		"question": "Kurš apgalvojums visprecīzāk apraksta jēdzienu “ataudze”?",
+		"options": {
+			"A": "kādā laika posmā dzīvi dzimušo bērnu skaita attiecība pret iedzīvotāju kopskaitu",
+			"B": "kādā laika posmā mirušo skaita attiecība pret iedzīvotāju kopskaitu",
+			"C": "starpība starp kādā laika posmā dzimušo un mirušo skaitu",
+			"D": "straujš iedzīvotāju skaita pieaugums kādā reģionā"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "geography_2023_1_8",
+		"question": "Magnitūda ir mērvienība, kas rāda",
+		"options": {
+			"A": "zemestrīcē izdalīto enerģijas daudzumu uz platības vienību",
+			"B": "zemestrīces radītos postījumus",
+			"C": "zemestrīcē bojāgājušo skaitu uz katriem 1000 teritorijas iedzīvotājiem",
+			"D": "zemestrīces intensitāti un iespēju zemestrīcei atkārtoties tuvākā mēneša laikā"
+		},
+		"answer": "A"
+	},
+	{
+		"ref": "geography_2023_1_9",
+		"question": "Kuri augu pielāgojumi raksturo savannas veģetāciju?",
+		"options": {
+			"A": "Plaša sakņu sistēma nodrošina koku stabilitāti un piekļuvi barības vielām augsnes virsējos slāņos. Ar vasku klātās piltuvveidīgās lapas ļauj novadīt lielu daudzumu ūdens īsās mitrās sezonas laikā.",
+			"B": "Vairāki atšķirīgi veģetācijas stāvi pielāgojušies intensīvam saules starojumam vasarās. Ziemā, samazinoties saules siltumam, kokiem nokrīt lapas, bet sausajā sezonā atkal atjaunojas.",
+			"C": "Tikai dažas koku sugas var izdzīvot garajā sausajā sezonā. Ar vasku klātās augu lapas ierobežo mitruma zudumu. Dziļās koku saknes sasniedz gruntsūdeņu līmeni. Graudzāles sausajā sezonā nokalst, bet mitrās sezonas laikā atjaunojas.",
+			"D": "Dominē skujkoki, un savannas nomalēs sastopami skrajmeži. Adatveidīgas lapas pielāgojušās lielām temperatūras svārstībām diennakts laikā."
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "geography_2023_1_10",
+		"question": "Kuras iezīmes raksturīgas cunami?",
+		"options": {
+			"A": "Tiem raksturīgi īsi viļņi un liela amplitūda. Parasti pārvietojas ar ātrumu 30 km/h. Viļņu augstums samazinās, sasniedzot piekrasti.",
+			"B": "Tiem raksturīgi gari viļņi un maza amplitūda. Ātrums dažreiz sasniedz 700 km/h. Jūras līčos seklūdens zonā strauji palielinās viļņu augstums.",
+			"C": "Tiem raksturīgi īsi viļņi, kuri veido vairākas viļņu sērijas. Viļņi ļoti strauji sasniedz sauszemi, kuras tuvumā augstums dažreiz pārsniedz 20 metrus.",
+			"D": "Stipra vēja iekustināti lieli viļņi, kuri pārvietojoties attīstās par ļoti spēcīgiem viļņiem. Jūras līčos seklūdens zonā veidojas gigantiska izmēra viļņi."
+		},
+		"answer": "B"
+	},
+	{
+		"ref": "geography_2023_1_11",
+		"question": "Kurš faktors veicinājis lineāra telpiskā plānojuma attīstību Jūrmalas pilsētā?",
+		"options": {
+			"A": "novietojums Rīgas tuvumā",
+			"B": "novietojums Rīgas līča piekrastē",
+			"C": "novietojums pie autoceļa A10",
+			"D": "novietojums Viduslatvijas zemienē"
+		},
+		"answer": "B"
+	},
+	{
+		"ref": "geography_2023_1_14",
+		"question": "Kurš dotais faktors veicina ieceļošanu valstī?",
+		"options": {
+			"A": "cilvēktiesību pārkāpumi valstī",
+			"B": "kvalificēta darbaspēka zema apmaksa valstī",
+			"C": "imigrāciju veicinoša politika valstī",
+			"D": "dabas katastrofu pieaugums valstī"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "geography_2023_1_15",
+		"question": "Kurš ievērojams starptautisks politisks notikums veicināja trešo demogrāfiskā sprādziena vilni pasaulē 20. gs. vidū?",
+		"options": {
+			"A": "koloniālās sistēmas sabrukums Āfrikā un Āzijā",
+			"B": "rūpniecības rašanās un lauksaimniecības attīstība",
+			"C": "dzimstību veicinoša politika Eiropā",
+			"D": "pilsoņu karš Āfrikas un Āzijas valstīs"
+		},
+		"answer": "A"
+	},
+	{
+		"ref": "geography_2023_1_16",
+		"question": "Kurš dabas faktoru pāris visbūtiskāk ietekmējis apdzīvotības atšķirības Bangladešā un Nepālā? Bangladešā apdzīvotība 2020. gadā bija 1045 cilv./km2, bet Nepālā – 180 cilv./km2.",
+		"options": {
+			"A": "augsne un dabiskais pieaugums",
+			"B": "reljefs un saldūdens pieejamība",
+			"C": "valsts platība un demogrāfiskā politika",
+			"D": "pilsētu attīstība un dabas katastrofas"
+		},
+		"answer": "B"
+	},
+	{
+		"ref": "geography_2023_1_17",
+		"question": "Kuras telpiskā zonējuma teritorijas visvairāk palielināsies, attīstoties loģistikas centram Ķekavas apkārtnē?",
+		"options": {
+			"A": "dzīvojamais rajons ar daudzstāvu apbūvi",
+			"B": "izglītības un rekreācijas rajons",
+			"C": "darījumu rajons pilsētas perifērijā",
+			"D": "darījumu rajons pilsētas centrā"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "geography_2023_1_19",
+		"question": "Kurš skaidrojums visprecīzāk apraksta cēloņus plašajai podzolēto augšņu izplatībai Latvijas teritorijā?",
+		"options": {
+			"A": "Latvijas teritorijā plaši izplatīts augsnes cilmiezis, ko veido kūdra, uz kuras, vēsā un mitrā klimata apstākļos purva augiem sadaloties, augsnē veidojas skāba reakcija un izskalojas minerālvielas",
+			"B": "Latvijai teritorijā plaši izplatīts augsnes cilmiezis, ko veido glacigēnie nogulumi, uz kuriem, vēsā un mitrā klimata apstākļos skujkoku nobirām sadaloties, augsnē veidojas bāziska reakcija un uzkrājas minerālvielas",
+			"C": " Latvijas teritorijā plaši attīstīta lauksaimnieciskā darbība, kuras ietvaros notiek augsnes agroķīmisko īpašību uzlabošana – kaļķojot, nosusinot un mēslojot augsni",
+			"D": "Latvijas teritorijā plaši izplatīts augsnes cilmiezis, ko veido glacigēnie nogulumi, uz kuriem, vēsā un mitrā klimata apstākļos skujkoku nobirām sadaloties, augsnē veidojas skāba reakcija un izskalojas minerālvielas"
+		},
+		"answer": "D"
+	},
+	{
+		"ref": "geography_2023_1_22",
+		"question": "Austrālijas un Japānas ekonomiskās attiecības bieži tikušas aprakstītas ar teicienu “Austrālija ir Japānas raktuves”. Kurš apgalvojums visprecīzāk pamato šo teicienu?",
+		"options": {
+			"A": "lielu daļu ražošanā nepieciešamo minerālresursu Japāna iepērk no Austrālijas",
+			"B": "Austrālija no Japānas iepērk enerģētiskos resursus",
+			"C": "Austrālija nodrošina praktiski visu Japānas pārtikas rūpniecību ar izejvielām",
+			"D": "Japāna nodrošina praktiski visu Austrālijas pārtikas rūpniecību ar izejvielām"
+		},
+		"answer": "A"
+	},
+	{
+		"ref": "geography_2023_1_24",
+		"question": "Kurai dabas resursu grupai pieder augi un dzīvnieki?",
+		"options": {
+			"A": "bioloģiskie, izsmeļamie neatjaunīgie",
+			"B": "bioloģiskie, neizsmeļamie",
+			"C": "bioloģiskie, izsmeļamie atjaunīgie",
+			"D": "bioloģiskie, lauksaimniecības"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "geography_2023_1_25",
+		"question": "Kurš faktors visbūtiskāk nosaka derīgo izrakteņu izvietojumu Latvijā?",
+		"options": {
+			"A": "ģeoloģiskā uzbūve un ģeoloģiskās attīstības vēsture",
+			"B": "reljefa formu izvietojums",
+			"C": "ieguves rūpniecības attīstība",
+			"D": "pieprasījums un piedāvājums globālajā tirgū"
+		},
+		"answer": "A"
+	},
+	{
+		"ref": "physics_2023_1_2",
+		"question": "Lidmašīna vienmērīgā kustībā veic vienu pilnu apli. Kurš apgalvojums vai kuri apgalvojumi par ķermeņa kustību ir patiesi? I Lidmašīnas pārvietojums ir vienāds ar nulli; II Lidmašīnas vidējais ātrums ir vienāds ar nulli; III Lidmašīnas centrtieces paātrinājums ir vienāds ar nulli.",
+		"options": {
+			"A": "tikai I",
+			"B": "tikai I un II",
+			"C": "tikai I un III",
+			"D": "tikai III"
+		},
+		"answer": "A"
+	},
+	{
+		"ref": "physics_2023_1_3",
+		"question": "Zeme iedarbojas uz Mēnesi ar noteiktu gravitācijas spēku. Kāds ir spēka modulis, ar kuru Mēness iedarbojas uz Zemi, salīdzinājumā ar spēku, ar kādu Zeme iedarbojas uz Mēnesi?",
+		"options": {
+			"A": "mazāks",
+			"B": "lielāks",
+			"C": "tikpat liels",
+			"D": "vienāds ar nulli"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "physics_2023_1_5",
+		"question": "Slēpotājs brauc lejup no kalna. Vispirms – pa kalna vienu nogāzi X, pēc tam – pa tā paša kalna nogāzi Y. Sniega virsmas fizikālās īpašības uz abām nogāzēm ir identiskas. Nogāze Y ir daudz stāvāka nekā nogāze X. Kurš apgalvojums par berzes spēku, kas darbojas uz slēpēm, ir patiess? Berzi starp slēpotāju un gaisu neņem vērā.",
+		"options": {
+			"A": "berzes spēks ir lielāks, kad slēpotājs brauc lejup pa nogāzi X",
+			"B": "berzes spēks ir lielāks, kad slēpotājs brauc lejup pa nogāzi Y",
+			"C": "berzes spēks nav atkarīgs no nogāzes stāvuma",
+			"D": "abos gadījumos berzes spēki ir vienādi, bet nav vienādi ar nulli"
+		},
+		"answer": "A"
+	},
+	{
+		"ref": "physics_2023_1_8",
+		"question": "Ūdenī vārīšanās laikā rodas daudz burbuļu. Kas, galvenokārt, atrodas šajos burbuļos?",
+		"options": {
+			"A": "gaiss",
+			"B": "skābeklis",
+			"C": "vakuums",
+			"D": "ūdens tvaiks"
+		},
+		"answer": "D"
+	},
+	{
+		"ref": "physics_2023_1_9",
+		"question": "Apaļā metāla diskā izgriezts apaļš, koncentrisks caurums. Disku vienmērīgi silda, un tā ārējais apkārtmērs palielinās par 4 procentiem. Šajā gadījumā cauruma apkārtmērs",
+		"options": {
+			"A": "samazinās par 16 procentiem",
+			"B": "samazinās par 4 procentiem",
+			"C": "palielinās par 4 procentiem",
+			"D": "palielinās par 8 procentiem"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "physics_2023_1_10",
+		"question": "Skolēni dabaszinību pulciņā pētīja ūdens iztvaikošanu. Viņi ielēja šķīvī nedaudz ūdens un iznesa šķīvi skolas pagalmā, lai ūdens iztvaikotu. Fizikālie lielumi: I ūdens temperatūra; II gaisa plūsmas ātrums ap šķidrumu; III ūdens virsmas laukums; IV gaisa mitrums. Kuri minētie fizikālie lielumi ietekmē laiku, kurā viss šķidrums iztvaikos?",
+		"options": {
+			"A": "tikai I un II",
+			"B": "tikai II un IV",
+			"C": "tikai I un III",
+			"D": "I, II, III un IV"
+		},
+		"answer": "D"
+	},
+	{
+		"ref": "physics_2023_1_11",
+		"question": "n moli ideālas gāzes atrodas slēgtā nemainīga tilpuma traukā. Cik reižu mainīsies gāzes spiediens, ja tās absolūtā temperatūra mainīsies divas reizes? R ir universālā gāzu konstante.",
+		"options": {
+			"A": "2/(nR)",
+			"B": "2",
+			"C": "2nR",
+			"D": "2/n"
+		},
+		"answer": "B"
+	},
+	{
+		"ref": "physics_2023_1_12",
+		"question": "Notiekot virknei termodinamisku procesu, nemainīgas masas gāzes iekšējā enerģija ir pieaugusi par 560 J. Darbs, ko paveikusi gāze, ir 320 J. Kāda siltuma apmaiņa ir notikusi starp gāzi un apkārtējo vidi?",
+		"options": {
+			"A": "240 J absorbēts no apkārtējās vides",
+			"B": "240 J izkliedēts apkārtējā vidē",
+			"C": "880 J absorbēts no apkārtējās vides",
+			"D": "880 J izkliedēts apkārtējā vidē"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "physics_2023_1_13",
+		"question": "Kura fizikālā lieluma mērvienība Starptautiskajā mērvienību sistēmā ir N/C?",
+		"options": {
+			"A": "elektriskā lādiņa",
+			"B": "elektriskā lauka intensitātes",
+			"C": "elektriskā lauka potenciāla",
+			"D": "elektriskā lauka darba"
+		},
+		"answer": "B"
+	},
+	{
+		"ref": "physics_2023_1_15",
+		"question": "Kura fizikālā lieluma precīzai raksturošanai jānorāda gan skaitliskā vērtība, gan virziens?",
+		"options": {
+			"A": "elektriskais lādiņš",
+			"B": "magnētiskā lauka indukcija",
+			"C": "elektriskā lauka potenciāls",
+			"D": "kondensatora enerģija"
+		},
+		"answer": "B"
+	},
+	{
+		"ref": "physics_2023_1_20",
+		"question": "Gaisma krīt caur vienu šauru spraugu, un var novērot gaismas difrakciju. Kādā gadījumā vislabāk var novērot gaismas difrakciju?",
+		"options": {
+			"A": "gaismas viļņa garums ir daudz īsāks nekā spraugas platums",
+			"B": "gaismas viļņa garums ir daudz garāks nekā spraugas platums",
+			"C": "gaismas viļņa garums ir salīdzināms ar spraugas platumu",
+			"D": "no situācijas apraksta nevar secināt par krītošās gaismas viļņa garumu"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "physics_2023_1_21",
+		"question": "Izteikti šādi apgalvojumi par viļņiem no koherentiem viļņu avotiem. I Viļņiem no koherentiem avotiem vienmēr ir vienāds ātrums visā ceļā no koherentiem avotiem līdz ekrānam; II Viļņiem no koherentiem avotiem ir vienāda frekvence; III Viļņiem no koherentiem avotiem ir nemainīga fāžu nobīde. Kurš apgalvojums ir patiess vai kuri apgalvojumi ir patiesi?",
+		"options": {
+			"A": "tikai I",
+			"B": "tikai I un II",
+			"C": "tikai I un III",
+			"D": "tikai II un III"
+		},
+		"answer": "D"
+	},
+	{
+		"ref": "physics_2023_1_22",
+		"question": "Dabā pastāv dažādi viļņi: I gaismas viļņi; II skaņas viļņi; III mikroviļņi. Kuriem viļņiem var novērot Doplera efektu?",
+		"options": {
+			"A": "tikai I",
+			"B": "tikai II",
+			"C": "tikai I un III",
+			"D": "I, II un III"
+		},
+		"answer": "D"
+	},
+	{
+		"ref": "physics_2023_1_23",
+		"question": "Ūdeņraža atoms sastāv no protona un elektrona. Kura mijiedarbība ir pamatā tam, ka atoms nesabrūk?",
+		"options": {
+			"A": "gravitācijas mijiedarbība",
+			"B": "vājā mijiedarbība",
+			"C": "elektromagnētiskā mijiedarbība",
+			"D": "stiprā mijiedarbība"
+		},
+		"answer": "C"
+	},
+	{
+		"ref": "physics_2023_1_25",
+		"question": "Astronoms atklāja, ka visām tālajām galaktikām, ko viņš novēroja, ir redzama sarkanā nobīde (astronoma novēroto zvaigžņu spektra līnijas bija nobīdījušās uz garāku viļņa garumu pusi). Kurš apgalvojums ir patiess?",
+		"options": {
+			"A": "galaktikas attālinās no novērotāja",
+			"B": "galaktikas tuvojas novērotājam",
+			"C": "galaktikas netuvojas un neattālinās no novērotāja",
+			"D": "sarkanā nobīde nesniedz informāciju par galaktiku kustību"
+		},
+		"answer": "A"
+	}
+]
