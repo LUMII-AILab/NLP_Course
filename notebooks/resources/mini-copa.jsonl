@@ -1,0 +1,10 @@
+{"premise": "Prece bija iepakota burbuļplēvē.", "choice1": "Tā bija trausla.", "choice2": "Tā bija maza.", "question": "cēlonis", "label": 0, "idx": 0}
+{"premise": "Es iztukšoju kabatas.", "choice1": "Es paņēmu biļetes kvīti.", "choice2": "Es atradu ieroci.", "question": "sekas", "label": 0, "idx": 1}
+{"premise": "Mājā iebruka termīti.", "choice1": "Termīti pazuda no mājas.", "choice2": "Termīti sagrauza koksni mājā.", "question": "sekas", "label": 1, "idx": 2}
+{"premise": "Ceļinieki sasniedza robežu.", "choice1": "Robežsargs pārbaudīja viņu pases.", "choice2": "Robežsargs viņus apsūdzēja kontrabandas pārvadāšanā.", "question": "sekas", "label": 0, "idx": 3}
+{"premise": "Birojs bija slēgts.", "choice1": "Bija brīvdienas.", "choice2": "Bija vasara.", "question": "cēlonis", "label": 0, "idx": 4}
+{"premise": "Meitenei pietrūka enerģijas.", "choice1": "Viņa spēlēja dambreti.", "choice2": "Viņa leca ar lecamauklu.", "question": "cēlonis", "label": 1, "idx": 5}
+{"premise": "Sieviete pazaudēja vietu rindā.", "choice1": "Rindai pievienojās citi cilvēki.", "choice2": "Viņa pameta rindu.", "question": "cēlonis", "label": 1, "idx": 6}
+{"premise": "Meitene aizspieda degunu.", "choice1": "Mazulis nosiekaloja viņas krūtis.", "choice2": "Mazulis notraipīja autiņus.", "question": "cēlonis", "label": 1, "idx": 7}
+{"premise": "Grupa atskaņoja savu hitu.", "choice1": "Klausītāji applaudēja līdzi mūzikai.", "choice2": "Publika pieklājīgi klausījās klusējot.", "question": "sekas", "label": 0, "idx": 8}
+{"premise": "Meitene vēlējās pateikties savai matemātikas skolotājai.", "choice1": "Meitene pēc skolas palika uz pēcstundām.", "choice2": "Meitene atnesa skolotājai ābolu.", "question": "sekas", "label": 1, "idx": 9}
