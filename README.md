@@ -56,7 +56,7 @@ Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par 
 ### Dekodētāju izmantošana, pielāgošana, novērtēšana
 
 1. LLM darbināšana, izmantojot Ollama: [ollama_LLMs_prompting.ipynb](notebooks/MSP/ollama_LLMs_prompting.ipynb)
-2. LLM novērtēšana un etalonuzdevumi: [evaluation.ipynb](notebooks/MSP/evaluation.ipynb)
+2. LLM novērtēšana un etalonuzdevumi: [evaluation.ipynb](notebooks/MSP/Evaluation.ipynb)
 
 ## Citi praktiskie darbi
 
