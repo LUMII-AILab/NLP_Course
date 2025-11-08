@@ -53,10 +53,14 @@ Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par 
 3. Tekstvienību pozicionālā kodēšana: [positional_encoding.ipynb](notebooks/MSP/positional_encoding.ipynb)
 4. BERT jēdzienvektoru dimensiju reducēšana, vizualizēšana: [PCA_of_BERT_embeddings.ipynb](notebooks/MSP/positional_encoding.ipynb)
 
-### Dekodētāju izmantošana, pielāgošana, novērtēšana
+### LLM izmantošana, pielāgošana, novērtēšana
 
 1. LLM darbināšana, izmantojot Ollama: [ollama_LLMs_prompting.ipynb](notebooks/MSP/ollama_LLMs_prompting.ipynb)
 2. LLM novērtēšana un etalonuzdevumi: [evaluation.ipynb](notebooks/MSP/Evaluation.ipynb)
+3. Multimodālu tiešraides komentāru ģenerēšana: [live_commentary_demo.ipynb](notebooks/MSP/live_commentary_demo.ipynb)
+4. LLM aģenti - ārēju rīku izsaukšana: [LLM_ToolCalling.ipynb](notebooks/MSP/LLM_ToolCalling.ipynb)
+5. LLM aģenti - "vibe coding": [LLM_VibeCode.ipynb](notebooks/MSP/LLM_VibeCode.ipynb)
+6. RAG demonstrācija: [RAG_demo.ipynb](notebooks/MSP/RAG_demo.ipynb)
 
 ## Citi praktiskie darbi
 
@@ -78,7 +82,9 @@ LU HZF maģistra studiju programmas kurss:
 prof. Inguna Skadiņa\
 prof. Normunds Grūzītis\
 Viesturs Jūlijs Lasmanis\
-Artūrs Znotiņš
+Artūrs Znotiņš\
+Roberts Darģis\
+Paulis Filips Bārzdiņš
 
 ## Atbalsts
 
