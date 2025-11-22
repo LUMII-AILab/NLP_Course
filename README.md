@@ -56,11 +56,12 @@ Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par 
 ### LLM izmantošana, pielāgošana, novērtēšana
 
 1. LLM darbināšana, izmantojot Ollama: [ollama_LLMs_prompting.ipynb](notebooks/MSP/ollama_LLMs_prompting.ipynb)
-2. LLM novērtēšana un etalonuzdevumi: [evaluation.ipynb](notebooks/MSP/Evaluation.ipynb)
-3. Multimodālu tiešraides komentāru ģenerēšana: [live_commentary_demo.ipynb](notebooks/MSP/live_commentary_demo.ipynb)
-4. LLM aģenti - ārēju rīku izsaukšana: [LLM_ToolCalling.ipynb](notebooks/MSP/LLM_ToolCalling.ipynb)
-5. LLM aģenti - "vibe coding": [LLM_VibeCode.ipynb](notebooks/MSP/LLM_VibeCode.ipynb)
-6. RAG demonstrācija: [RAG_demo.ipynb](notebooks/MSP/RAG_demo.ipynb)
+2. LLM novērtēšana - etalonuzdevumi: [evaluation.ipynb](notebooks/MSP/Evaluation.ipynb)
+3. LLM novērtēšana - perpleksitāte: [llm_perplexity.ipynb](notebooks/MSP/llm_perplexity.ipynb)
+4. Multimodālu tiešraides komentāru ģenerēšana: [live_commentary_demo.ipynb](notebooks/MSP/live_commentary_demo.ipynb)
+5. LLM aģenti - ārēju rīku izsaukšana: [LLM_ToolCalling.ipynb](notebooks/MSP/LLM_ToolCalling.ipynb)
+6. LLM aģenti - "vibe coding": [LLM_VibeCode.ipynb](notebooks/MSP/LLM_VibeCode.ipynb)
+7. RAG demonstrācija: [RAG_demo.ipynb](notebooks/MSP/RAG_demo.ipynb)
 
 ## Citi praktiskie darbi
 
