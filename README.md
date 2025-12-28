@@ -62,7 +62,11 @@ Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par 
 5. LLM aģenti - ārēju rīku izsaukšana: [LLM_ToolCalling.ipynb](notebooks/MSP/LLM_ToolCalling.ipynb)
 6. LLM aģenti - "vibe coding": [LLM_VibeCode.ipynb](notebooks/MSP/LLM_VibeCode.ipynb)
 7. RAG demonstrācija: [RAG_demo.ipynb](notebooks/MSP/RAG_demo.ipynb)
-7. ASR eksperimenti: [speech_recognition.ipynb](notebooks/MSP/speech_recognition.ipynb)
+
+### ASR modeļu izmantošana, novērtēšana
+
+1. Eksperimenti latviešu valodā: [speech_recognition.ipynb](notebooks/MSP/speech_recognition.ipynb)
+2. Valodas atpazīšana (klasificēšana): [spoken_language_recognition.ipynb](notebooks/MSP/spoken_language_recognition.ipynb)
 
 ## Citi praktiskie darbi
 
