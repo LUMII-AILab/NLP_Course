@@ -2,12 +2,12 @@
 
 LU Eksakto zinātņu un tehnoloģiju fakultātes Datorikas nodaļas bakalaura un maģistra studiju programmas kursi:
 
-* BSP: Valodu tehnoloģiju pamati (DatZB022-LV, DatZB022-EN)
-* MSP: Valodu tehnoloģiju lietojumi (DatZM037)
+* Bakalaura programma: Valodu tehnoloģiju pamati (DatZB022-LV, DatZB022-EN)
+* Maģistra programma: Valodu tehnoloģiju lietojumi (DatZM037)
 
 Kursā izmantotie [termini](VTI_termini.pdf); sk. arī [Termini.gov.lv](https://termini.gov.lv).
 
-## BSP praktiskie darbi
+## Bakaulara programmas praktiskie darbi
 
 ### Rīkkopas valodas resursu priekšapstrādei
 
@@ -23,28 +23,29 @@ Kursā izmantotie [termini](VTI_termini.pdf); sk. arī [Termini.gov.lv](https://
 ### Gramatiskā analīze
 
 6. Latviešu valodas morfoloģiskais analizators un sintezators: [TezaursAPI.ipynb](notebooks/TezaursAPI.ipynb)
-7. Rīkkopas universālo atkarību parsēšanai: [ParsingUD.ipynb](notebooks/ParsingUD.ipynb)
+7. Rīkkopas tekstvienību morfoloģiskajai marķēšanai: [POS_tagging.ipynb](notebooks/POS_tagging.ipynb)
+8. Rīkkopas universālo atkarību parsēšanai: [ParsingUD.ipynb](notebooks/ParsingUD.ipynb)
 
 ### Statistiskie valodas modeļi
 
-8. N-grammu modeļi: [NGram.ipynb](notebooks/NGram.ipynb)
-9. TF-IDF : [tf-idf.ipynb](notebooks/tf_idf.ipynb) un Word2vec apmācība un lietojums: [Word2vec.ipynb](notebooks/Word2vec.ipynb)
-10. Teksta klasificēšana: [LangID.ipynb](notebooks/LangID.ipynb), [NaiveBayes.ipynb](notebooks/NaiveBayes.ipynb)
+9. N-grammu modeļi: [NGram.ipynb](notebooks/NGram.ipynb)
+10. TF-IDF : [tf-idf.ipynb](notebooks/tf_idf.ipynb) un Word2vec apmācība un lietojums: [Word2vec.ipynb](notebooks/Word2vec.ipynb)
+11. Teksta klasificēšana: [LangID.ipynb](notebooks/LangID.ipynb), [NaiveBayes.ipynb](notebooks/NaiveBayes.ipynb)
 
 Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par teksta klasifikāciju: https://github.com/cfrantzidis/sleepCare
 
 ### Neironu valodas modeļi
 
-11. Teksta klasificēšana: [fastText.ipynb](notebooks/fastText.ipynb) (*1-layer*, *linear*) &rarr; [BERT.ipynb](notebooks/BERT.ipynb) (*deep*, *non-linear*)
-12. Modeļi un demonstrācijas Hugging Face platformā:
+12. Teksta klasificēšana: [fastText.ipynb](notebooks/fastText.ipynb) (*1-layer*, *linear*) &rarr; [BERT.ipynb](notebooks/BERT.ipynb) (*deep*, *non-linear*)
+13. Modeļi un demonstrācijas Hugging Face platformā:
 - Skatīt [Tasks](https://huggingface.co/tasks), piemēram:
   - `Feature Extraction`: [AiLab-IMCS-UL/lvbert](https://huggingface.co/AiLab-IMCS-UL/lvbert)
   - `Fill-Mask`: [google-bert/bert-base-cased](https://huggingface.co/google-bert/bert-base-cased)
   - `Sentence Similarity`: [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
-13. Vārdšķiru un morfoloģiskā marķēšana (Part of Speech (POS) Tagging): [POS_tagging.ipynb](notebooks/POS_tagging.ipynb)
-14. Nosaukto entitāšu marķēšana (Named entity recognition): [NER.ipynb](notebooks/NER.ipynb)
+14. Vārdšķiru un morfoloģiskā marķēšana (Part of Speech (POS) Tagging): [POS_tagging.ipynb](notebooks/POS_tagging.ipynb)
+15. Nosaukto entitāšu marķēšana (Named entity recognition): [NER.ipynb](notebooks/NER.ipynb)
 
-## MSP praktiskie darbi
+## Maģistra programmas praktiskie darbi
 
 ### Kodētāju un kodētāju-dekodētāju izmantošana, pielāgošana
 
