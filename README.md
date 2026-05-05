@@ -45,6 +45,7 @@ Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par 
 14. Vārdšķiru un morfoloģiskā marķēšana (Part of Speech (POS) Tagging): [POS_tagging.ipynb](notebooks/POS_tagging.ipynb)
 15. Nosaukto entitāšu marķēšana (Named entity recognition): [NER.ipynb](notebooks/NER.ipynb)
 16. Atvērto LLM modeļu darbināšana, izmantojot OpenAI API: [LLM_as_a_service.ipynb](notebooks/LLM_as_a_service.ipynb)
+17. LLM novērtēsana ar etalonuzdevumiem:   [Evaluation.ipynb](notebooks/Evaluation.ipynb)  
 
 ## Maģistra programmas praktiskie darbi
 
