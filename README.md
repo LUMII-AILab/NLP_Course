@@ -44,6 +44,7 @@ Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par 
   - `Sentence Similarity`: [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
 14. Vārdšķiru un morfoloģiskā marķēšana (Part of Speech (POS) Tagging): [POS_tagging.ipynb](notebooks/POS_tagging.ipynb)
 15. Nosaukto entitāšu marķēšana (Named entity recognition): [NER.ipynb](notebooks/NER.ipynb)
+16. Atvērto LLM modeļu darbināšana, izmantojot OpenAI API: [LLM_as_a_service.ipynb](notebooks/LLM_as_a_service.ipynb)
 
 ## Maģistra programmas praktiskie darbi
 
