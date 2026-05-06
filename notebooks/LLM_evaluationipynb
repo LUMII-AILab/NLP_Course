@@ -105,6 +105,35 @@
       "outputs": []
     },
     {
+      "cell_type": "code",
+      "source": [
+        "# Pielāgota modeļa darbināšana\n",
+        "# chat komanda paredzēta dialogam. Tā ļauj labāk iegūt atbildi uz jautājumu.\n",
+        "from openai import OpenAI\n",
+        "model = \"google/gemma-3-27b-it\"\n",
+        "client = OpenAI(\n",
+        "    base_url=models[model],\n",
+        "    api_key=\"any_key\",\n",
+        ")\n",
+        "# Response=client.completions.create\n",
+        "response=client.chat.completions.create(\n",
+        "    model=model,\n",
+        "    messages=[\n",
+        "        {\n",
+        "            \"role\": \"user\",\n",
+        "            \"content\": prefix + my_prompt_instruct,\n",
+        "        },\n",
+        "    ],\n",
+        ")\n",
+        "print(response.choices[0].message.content)"
+      ],
+      "metadata": {
+        "id": "9qpvL26dnZC9"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
       "cell_type": "markdown",
       "metadata": {
         "id": "Fv4PzZnoFtN7"
