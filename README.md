@@ -44,7 +44,7 @@ Kursā izmantotie [termini](VTI_termini.pdf); sk. arī [Termini.gov.lv](https://
 14. Vārdšķiru un morfoloģiskā marķēšana (Part of Speech (POS) Tagging): [POS_tagging.ipynb](notebooks/POS_tagging.ipynb)
 15. Nosaukto entitāšu marķēšana (Named entity recognition): [NER.ipynb](notebooks/NER.ipynb)
 16. Atvērto LLM modeļu darbināšana, izmantojot OpenAI API: [LLM_as_a_service.ipynb](notebooks/LLM_as_a_service.ipynb)
-17. LLM novērtēšana ar etalonuzdevumiem: [Evaluation.ipynb](notebooks/Evaluation.ipynb)
+17. LLM novērtēšana ar etalonuzdevumiem: [LLM_evaluation.ipynb](notebooks/LLM_evaluation.ipynb)
 
 
 ## Maģistra programmas praktiskie darbi
