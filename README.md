@@ -32,7 +32,6 @@ Kursā izmantotie [termini](VTI_termini.pdf); sk. arī [Termini.gov.lv](https://
 10. TF-IDF : [tf-idf.ipynb](notebooks/tf_idf.ipynb) un Word2vec apmācība un lietojums: [Word2vec.ipynb](notebooks/Word2vec.ipynb)
 11. Teksta klasificēšana: [LangID.ipynb](notebooks/LangID.ipynb), [NaiveBayes.ipynb](notebooks/NaiveBayes.ipynb)
 
-Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par teksta klasifikāciju: https://github.com/cfrantzidis/sleepCare
 
 ### Neironu valodas modeļi
 
@@ -45,7 +44,8 @@ Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par 
 14. Vārdšķiru un morfoloģiskā marķēšana (Part of Speech (POS) Tagging): [POS_tagging.ipynb](notebooks/POS_tagging.ipynb)
 15. Nosaukto entitāšu marķēšana (Named entity recognition): [NER.ipynb](notebooks/NER.ipynb)
 16. Atvērto LLM modeļu darbināšana, izmantojot OpenAI API: [LLM_as_a_service.ipynb](notebooks/LLM_as_a_service.ipynb)
-17. LLM novērtēsana ar etalonuzdevumiem:   [Evaluation.ipynb](notebooks/Evaluation.ipynb)  
+17. LLM novērtēšana ar etalonuzdevumiem: [Evaluation.ipynb](notebooks/Evaluation.ipynb)
+
 
 ## Maģistra programmas praktiskie darbi
 
@@ -71,7 +71,8 @@ Dr. Christos A. Frantzidisvies (Linkolnas Universitātes) lekcijas piemērs par 
 1. Eksperimenti latviešu valodā: [speech_recognition.ipynb](notebooks/MSP/speech_recognition.ipynb)
 2. Valodas atpazīšana (klasificēšana): [spoken_language_recognition.ipynb](notebooks/MSP/spoken_language_recognition.ipynb)
 
-## Citi praktiskie darbi
+
+## Citas nodarbības
 
 ### [BSSDH 2024 Workshop 4](https://www.digitalhumanities.lv/bssdh/2024/lectures-and-workshops/)
 
@@ -86,6 +87,7 @@ LU HZF maģistra studiju programmas kurss:
 1. Teksta korpusa izveide: [notebook](notebooks/CrawlingSimple.ipynb)
 2. Teksta korpusa marķēšana: [notebook](notebooks/NLPPipeSimple.ipynb), [korpuss](notebooks/resources/velnini.txt)
 
+
 ## Autori
 
 prof. Inguna Skadiņa\
@@ -94,6 +96,7 @@ Viesturs Jūlijs Lasmanis\
 Artūrs Znotiņš\
 Roberts Darģis\
 Paulis Filips Bārzdiņš
+
 
 ## Atbalsts
 
