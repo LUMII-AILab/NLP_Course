@@ -1,10 +1,10 @@
-{"premise": "The item was packaged in bubble wrap.", "choice1": "It was fragile.", "choice2": "It was small.", "question": "cause", "idx": 0}
-{"premise": "I emptied my pockets.", "choice1": "I retrieved a ticket stub.", "choice2": "I found a weapon.", "question": "effect", "idx": 1}
-{"premise": "Termites invaded the house.", "choice1": "The termites disappeared from the house.", "choice2": "The termites ate through the wood in the house.", "question": "effect", "idx": 2}
-{"premise": "The travelers reached the border.", "choice1": "The patrol agent checked their passports.", "choice2": "The patrol agent accused them of smuggling.", "question": "effect", "idx": 3}
-{"premise": "The office was closed.", "choice1": "It was a holiday.", "choice2": "It was summer.", "question": "cause", "idx": 4}
-{"premise": "The girl ran out of energy.", "choice1": "She played checkers.", "choice2": "She jumped rope.", "question": "cause", "idx": 5}
-{"premise": "The woman lost her place in line.", "choice1": "More people entered the line.", "choice2": "She stepped out of the line.", "question": "cause", "idx": 6}
-{"premise": "The girl pinched her nose.", "choice1": "The baby drooled on her bib.", "choice2": "The baby soiled her diaper.", "question": "cause", "idx": 7}
-{"premise": "The band played their hit song.", "choice1": "The audience clapped along to the music.", "choice2": "The audience politely listened in silence.", "question": "effect", "idx": 8}
-{"premise": "The girl wanted to thank her math teacher.", "choice1": "The girl stayed after school for detention.", "choice2": "The girl brought the teacher an apple.", "question": "effect", "idx": 9}
+{"label":0,"id":501,"premise":"The item was packaged in bubble wrap.","question":"cause","choice1":"It was fragile.","choice2":"It was small.","mirrored":false}
+{"label":0,"id":502,"premise":"I emptied my pockets.","question":"effect","choice1":"I retrieved a ticket stub.","choice2":"I found a weapon.","mirrored":false}
+{"label":1,"id":503,"premise":"Termites invaded the house.","question":"effect","choice1":"The termites disappeared from the house.","choice2":"The termites ate through the wood in the house.","mirrored":false}
+{"label":0,"id":504,"premise":"The travelers reached the border.","question":"effect","choice1":"The patrol agent checked their passports.","choice2":"The patrol agent accused them of smuggling.","mirrored":false}
+{"label":0,"id":505,"premise":"The office was closed.","question":"cause","choice1":"It was a holiday.","choice2":"It was summer.","mirrored":false}
+{"label":1,"id":506,"premise":"The girl ran out of energy.","question":"cause","choice1":"She played checkers.","choice2":"She jumped rope.","mirrored":false}
+{"label":1,"id":507,"premise":"The woman lost her place in line.","question":"cause","choice1":"More people entered the line.","choice2":"She stepped out of the line.","mirrored":false}
+{"label":1,"id":508,"premise":"The girl pinched her nose.","question":"cause","choice1":"The baby drooled on her bib.","choice2":"The baby soiled her diaper.","mirrored":false}
+{"label":0,"id":509,"premise":"The band played their hit song.","question":"effect","choice1":"The audience clapped along to the music.","choice2":"The audience politely listened in silence.","mirrored":false}
+{"label":1,"id":510,"premise":"The girl wanted to thank her math teacher.","question":"effect","choice1":"The girl stayed after school for detention.","choice2":"The girl brought the teacher an apple.","mirrored":false}
