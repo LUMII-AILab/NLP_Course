@@ -101,3 +101,33 @@ Paulis Filips Bārzdiņš
 ## Atbalsts
 
 Kursa izstrādi finansē Eiropas Savienības Atveseļošanas un noturības mehānisma investīcija un valsts budžets projekta “Valodu tehnoloģiju iniciatīva” (2.3.1.1.i.0/1/22/I/CFLA/002) ietvaros.
+
+## Citation
+
+If you find this useful in your research, please consider citing: 
+
+	@inproceedings{skadina-etal-2026-teaching-nlp,
+    title = "Teaching {NLP} in the {AI} Era: Experiences from the {U}niversity of {L}atvia",
+    author = "Skadina, Inguna  and
+      Barzdins, Guntis  and
+      Boj{\={a}}rs, Uldis  and
+      Gruzitis, Normunds  and
+      Paikens, P{\={e}}teris",
+    editor = {A{\ss}enmacher, Matthias  and
+      Biester, Laura  and
+      Borg, Claudia  and
+      Kov{\'a}cs, Gy{\"o}rgy  and
+      Mieskes, Margot  and
+      Serrano, Sofia},
+    booktitle = "Proceedings of the Seventh Workshop on Teaching Natural Language Processing ({T}each{NLP} 2026)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.teachingnlp-1.6/",
+    doi = "10.18653/v1/2026.teachingnlp-1.6",
+    pages = "34--36",
+    ISBN = "979-8-89176-375-3"
+}
+
+
