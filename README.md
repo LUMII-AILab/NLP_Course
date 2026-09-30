@@ -43,7 +43,7 @@ Kursā izmantotie [termini](VTI_termini.pdf); sk. arī [Termini.gov.lv](https://
   - `Sentence Similarity`: [sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2](https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2)
 14. Vārdšķiru un morfoloģiskā marķēšana (Part of Speech (POS) Tagging): [POS_tagging.ipynb](notebooks/POS_tagging.ipynb)
 15. Nosaukto entitāšu marķēšana (Named entity recognition): [NER.ipynb](notebooks/NER.ipynb)
-16. Atvērto LLM modeļu darbināšana, izmantojot OpenAI API: [LLM_as_a_service.ipynb](notebooks/LLM_as_a_service.ipynb)
+16. LLM darbināšana mākonī: [LLM_as_a_service.ipynb](notebooks/LLM_as_a_service.ipynb)
 17. LLM novērtēšana ar etalonuzdevumiem: [LLM_evaluation.ipynb](notebooks/LLM_evaluation.ipynb)
 
 
@@ -58,18 +58,19 @@ Kursā izmantotie [termini](VTI_termini.pdf); sk. arī [Termini.gov.lv](https://
 
 ### LLM izmantošana, pielāgošana, novērtēšana
 
-1. LLM darbināšana, izmantojot Ollama: [ollama_LLMs_prompting.ipynb](notebooks/MSP/ollama_LLMs_prompting.ipynb)
-2. LLM novērtēšana - etalonuzdevumi: [evaluation.ipynb](notebooks/MSP/Evaluation.ipynb)
-3. LLM novērtēšana - perpleksitāte: [llm_perplexity.ipynb](notebooks/MSP/llm_perplexity.ipynb)
-4. Multimodālu tiešraides komentāru ģenerēšana: [live_commentary_demo.ipynb](notebooks/MSP/live_commentary_demo.ipynb)
-5. LLM aģenti - ārēju rīku izsaukšana: [LLM_ToolCalling.ipynb](notebooks/MSP/LLM_ToolCalling.ipynb)
-6. LLM aģenti - "vibe coding": [LLM_VibeCode.ipynb](notebooks/MSP/LLM_VibeCode.ipynb)
-7. RAG demonstrācija: [RAG_demo.ipynb](notebooks/MSP/RAG_demo.ipynb)
+5. LLM darbināšana mākonī: [LLM_as_a_service.ipynb](notebooks/MSP/LLM_as_a_service.ipynb)
+6. LLM darbināšana, izmantojot Ollama: [ollama_LLMs_prompting.ipynb](notebooks/MSP/ollama_LLMs_prompting.ipynb)
+7. LLM novērtēšana - etalonuzdevumi: [evaluation.ipynb](notebooks/MSP/Evaluation.ipynb)
+8. LLM novērtēšana - perpleksitāte: [llm_perplexity.ipynb](notebooks/MSP/llm_perplexity.ipynb)
+9. Multimodālu tiešraides komentāru ģenerēšana: [live_commentary_demo.ipynb](notebooks/MSP/live_commentary_demo.ipynb)
+10. LLM aģenti - ārēju rīku izsaukšana: [LLM_ToolCalling.ipynb](notebooks/MSP/LLM_ToolCalling.ipynb)
+11. LLM aģenti - "vibe coding": [LLM_VibeCode.ipynb](notebooks/MSP/LLM_VibeCode.ipynb)
+12. RAG demonstrācija: [RAG_demo.ipynb](notebooks/MSP/RAG_demo.ipynb)
 
 ### ASR modeļu izmantošana, novērtēšana
 
-1. Eksperimenti latviešu valodā: [speech_recognition.ipynb](notebooks/MSP/speech_recognition.ipynb)
-2. Valodas atpazīšana (klasificēšana): [spoken_language_recognition.ipynb](notebooks/MSP/spoken_language_recognition.ipynb)
+13. Eksperimenti latviešu valodā: [speech_recognition.ipynb](notebooks/MSP/speech_recognition.ipynb)
+14. Valodas atpazīšana (klasificēšana): [spoken_language_recognition.ipynb](notebooks/MSP/spoken_language_recognition.ipynb)
 
 
 ## Citas nodarbības
