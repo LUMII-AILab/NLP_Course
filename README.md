@@ -63,9 +63,8 @@ Kursā izmantotie [termini](VTI_termini.pdf); sk. arī [Termini.gov.lv](https://
 7. LLM novērtēšana - etalonuzdevumi: [evaluation.ipynb](notebooks/MSP/Evaluation.ipynb)
 8. LLM novērtēšana - perpleksitāte: [llm_perplexity.ipynb](notebooks/MSP/llm_perplexity.ipynb)
 9. Multimodālu tiešraides komentāru ģenerēšana: [live_commentary_demo.ipynb](notebooks/MSP/live_commentary_demo.ipynb)
-10. LLM aģenti - ārēju rīku izsaukšana: [LLM_ToolCalling.ipynb](notebooks/MSP/LLM_ToolCalling.ipynb)
-11. LLM aģenti - "vibe coding": [LLM_VibeCode.ipynb](notebooks/MSP/LLM_VibeCode.ipynb)
-12. RAG demonstrācija: [RAG_demo.ipynb](notebooks/MSP/RAG_demo.ipynb)
+10. RAG demonstrācija: [RAG_demo.ipynb](notebooks/MSP/RAG_demo.ipynb)
+11. LLM aģenti - ārēju rīku izsaukšana: [LLM_agents_DIY.ipynb](notebooks/MSP/LLM_agents_DIY.ipynb)
 
 ### ASR modeļu izmantošana, novērtēšana
 
